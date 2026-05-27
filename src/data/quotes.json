@@ -1,7 +1,22 @@
 [
-  { "characterId": "gon", "quote": "I want to become a Hunter just like my father." },
-  { "characterId": "killua", "quote": "There are liars who only lie when there's a reason to, and there are liars who also lie without reason." },
+  { "characterId": "gon-freecss", "quote": "I want to become a Hunter just like my father." },
+  { "characterId": "killua-zoldyck", "quote": "There are liars who only lie when there's a reason to, and there are liars who also lie without reason." },
   { "characterId": "kurapika", "quote": "I will become a Blacklist Hunter and bring down the Phantom Troupe." },
-  { "characterId": "leorio", "quote": "Don't lump me in with you guys. I'm only in this for the money!" },
-  { "characterId": "hisoka", "quote": "My greatest pleasure comes when such people buckle to their knees and beg for mercy." }
+  { "characterId": "leorio-paradinight", "quote": "Don't lump me in with you guys. I'm only in this for the money!" },
+  { "characterId": "hisoka-morow", "quote": "My greatest pleasure comes when such people buckle to their knees and beg for mercy." },
+  { "characterId": "chrollo-lucilfer", "quote": "I have no interest in any individual. The only thing I care about is the Troupe." },
+  { "characterId": "meruem", "quote": "Why do humans insist on fighting over trivial differences, such as birthplace?" },
+  { "characterId": "neferpitou", "quote": "The king must not be harmed. That is our one absolute." },
+  { "characterId": "isaac-netero", "quote": "I've spent my entire life pushing myself to the limit to find a worthy opponent." },
+  { "characterId": "illumi-zoldyck", "quote": "Killua, you are my little brother. I will always protect you from making wrong decisions." },
+  { "characterId": "biscuit-krueger", "quote": "Stress makes you stronger. That's the gift of Nen." },
+  { "characterId": "ging-freecss", "quote": "You should enjoy the little detours to the fullest. Because that's where you'll find the things more important than what you want." },
+  { "characterId": "kite", "quote": "There's no such thing as a painless lesson. That's how stupid humans are." },
+  { "characterId": "knuckle-bine", "quote": "If you're going to cry, do it after the battle." },
+  { "characterId": "morel-mackernasey", "quote": "Hesitation at the crucial moment is a flaw you need to fix." },
+  { "characterId": "silva-zoldyck", "quote": "The Zoldycks have survived for generations because we never betray a client." },
+  { "characterId": "zeno-zoldyck", "quote": "Professional assassins don't leave witnesses." },
+  { "characterId": "razor", "quote": "I was created to play games. But these games have rules, and rules must be respected." },
+  { "characterId": "genthru", "quote": "Once I decided to play to win, I stopped worrying about the methods." },
+  { "characterId": "pariston-hill", "quote": "I only have fun when I'm being hated. People who aren't hated aren't worth a thing." }
 ]
