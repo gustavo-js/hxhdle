@@ -1,0 +1,109 @@
+/* ============================================================================
+   VictoryCard Component Styles
+   ============================================================================ */
+
+.victory-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md, 16px);
+
+  padding: var(--spacing-xl, 32px) var(--spacing-lg, 24px);
+  background-color: var(--color-bg-secondary, #16213e);
+  border: 1px solid var(--cell-border-color, #505070);
+  border-radius: var(--border-radius-lg, 8px);
+  box-shadow: var(--shadow-lg, 0 8px 16px rgba(0, 0, 0, 0.7));
+
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Mode badge */
+.victory-card__mode-label {
+  font-size: var(--font-size-sm, 14px);
+  font-weight: var(--font-weight-medium, 500);
+  color: var(--color-text-secondary, #a8a8b8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+}
+
+/* "You got it!" heading */
+.victory-card__heading {
+  font-size: var(--font-size-2xl, 32px);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-accent-gold, #c9a84c);
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+/* Character portrait — 120×120 rounded square */
+.victory-card__portrait {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--color-accent-gold, #c9a84c);
+  background-color: var(--color-bg-primary, #1a1a2e);
+  box-shadow: var(--shadow-md, 0 4px 8px rgba(0, 0, 0, 0.6));
+}
+
+/* Character name */
+.victory-card__name {
+  font-size: var(--font-size-xl, 24px);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-primary, #e0e0e0);
+  margin-bottom: 0;
+}
+
+/* Guess count stat */
+.victory-card__stat {
+  font-size: var(--font-size-lg, 18px);
+  color: var(--color-text-secondary, #a8a8b8);
+  margin-bottom: 0;
+}
+
+.victory-card__stat-number {
+  font-size: var(--font-size-2xl, 32px);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-result-correct, #538d4e);
+}
+
+/* Action buttons row */
+.victory-card__actions {
+  display: flex;
+  gap: var(--spacing-sm, 8px);
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Shared button base — inherits global button reset */
+.victory-card__btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* Share button: outlined gold */
+.victory-card__btn--share {
+  background-color: transparent;
+  color: var(--color-accent-gold, #c9a84c);
+  border: 2px solid var(--color-accent-gold, #c9a84c);
+}
+
+.victory-card__btn--share:hover {
+  background-color: rgba(201, 168, 76, 0.1);
+  box-shadow: var(--shadow-md, 0 4px 8px rgba(0, 0, 0, 0.6));
+}
+
+/* Play-again button: filled gold (default global button style) */
+.victory-card__btn--play-again {
+  background-color: var(--color-accent-gold, #c9a84c);
+  color: var(--color-bg-primary, #1a1a2e);
+}
+
+.victory-card__btn--play-again:hover {
+  background-color: var(--color-accent-gold-hover, #d4b35f);
+}
