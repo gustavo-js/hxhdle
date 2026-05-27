@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gon",
+    "name": "Gon Freecss",
+    "gender": "Male",
+    "origin": "Whale Island",
+    "affiliation": ["Hunters Association"],
+    "nenType": ["Enhancer"],
+    "status": "Alive",
+    "ageRange": "Teen",
+    "hunterLicense": true,
+    "image": "/images/characters/gon.webp"
+  },
+  {
+    "id": "killua",
+    "name": "Killua Zoldyck",
+    "gender": "Male",
+    "origin": "Kukuroo Mountain",
+    "affiliation": ["Zoldyck Family"],
+    "nenType": ["Transmuter"],
+    "status": "Alive",
+    "ageRange": "Teen",
+    "hunterLicense": true,
+    "image": "/images/characters/killua.webp"
+  },
+  {
+    "id": "kurapika",
+    "name": "Kurapika",
+    "gender": "Male",
+    "origin": "Lukso Province",
+    "affiliation": ["Nostrade Family", "Hunters Association"],
+    "nenType": ["Conjurer", "Specialist"],
+    "status": "Alive",
+    "ageRange": "Teen",
+    "hunterLicense": true,
+    "image": "/images/characters/kurapika.webp"
+  },
+  {
+    "id": "leorio",
+    "name": "Leorio Paradinight",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": ["Hunters Association"],
+    "nenType": ["Emitter"],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "image": "/images/characters/leorio.webp"
+  },
+  {
+    "id": "hisoka",
+    "name": "Hisoka Morow",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": ["Phantom Troupe"],
+    "nenType": ["Transmuter"],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "image": "/images/characters/hisoka.webp"
+  }
+]

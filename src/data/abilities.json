@@ -1,0 +1,27 @@
+[
+  {
+    "characterId": "gon",
+    "ability": "Jajanken",
+    "description": "A nen technique based on rock-paper-scissors, channeling Enhancer, Emitter, or Conjurer energy through each hand sign."
+  },
+  {
+    "characterId": "killua",
+    "ability": "Godspeed",
+    "description": "Converts nen into electricity, allowing movement and attacks at lightning speed beyond the range of conscious thought."
+  },
+  {
+    "characterId": "kurapika",
+    "ability": "Emperor Time",
+    "description": "A Specialist ability that activates all six nen types at 100% efficiency, at the cost of one hour of life per second active."
+  },
+  {
+    "characterId": "leorio",
+    "ability": "Remote Punch",
+    "description": "An Emitter technique that opens a portal through which the user can strike distant targets as if they were right in front of them."
+  },
+  {
+    "characterId": "hisoka",
+    "ability": "Bungee Gum",
+    "description": "A Transmutation ability that gives the user's nen the properties of both rubber and gum, allowing it to stretch, stick, and snap back."
+  }
+]
