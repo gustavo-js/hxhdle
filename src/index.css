@@ -131,7 +131,7 @@ a {
 }
 
 a:hover {
-  color: lighten(var(--color-accent-gold), 10%);
+  color: #dfc96f;
   text-decoration: underline;
 }
 
@@ -154,7 +154,7 @@ button {
 }
 
 button:hover {
-  background-color: lighten(var(--color-accent-gold), 5%);
+  background-color: #d4b35f;
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
@@ -210,7 +210,7 @@ select:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-border-color);
+  background-color: var(--cell-border-color);
   border-radius: 4px;
   transition: background-color var(--transition-fast);
 }
