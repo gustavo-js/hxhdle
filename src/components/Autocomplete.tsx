@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from "react"
+import { useState, useRef, useEffect, useCallback, useId } from "react"
 import type { Character } from "../types"
 import "./Autocomplete.css"
 
@@ -21,6 +21,9 @@ export default function Autocomplete({
   const [isOpen, setIsOpen] = useState(false)
   const [highlightedIndex, setHighlightedIndex] = useState(-1)
 
+  const id = useId()
+  const listboxId = `${id}-listbox`
+
   const wrapperRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLUListElement>(null)
@@ -40,12 +43,13 @@ export default function Autocomplete({
 
   const handleSelect = useCallback(
     (character: Character) => {
+      if (disabled) return
       onSelect(character)
       setQuery("")
       closeDropdown()
       inputRef.current?.focus()
     },
-    [onSelect, closeDropdown]
+    [disabled, onSelect, closeDropdown]
   )
 
   // Close on outside click
@@ -66,6 +70,13 @@ export default function Autocomplete({
     item?.scrollIntoView({ block: "nearest" })
   }, [highlightedIndex])
 
+  // Reset highlightedIndex when filtered list shrinks below current index
+  useEffect(() => {
+    if (highlightedIndex >= filtered.length) {
+      setHighlightedIndex(-1)
+    }
+  }, [filtered.length, highlightedIndex])
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value)
     setHighlightedIndex(-1)
@@ -75,6 +86,7 @@ export default function Autocomplete({
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!isOpen) {
       if (e.key === "ArrowDown" && query.trim()) {
+        e.preventDefault()
         setIsOpen(true)
       }
       return
@@ -117,6 +129,7 @@ export default function Autocomplete({
       <input
         ref={inputRef}
         type="text"
+        role="combobox"
         className="autocomplete-input"
         value={query}
         onChange={handleInputChange}
@@ -127,32 +140,33 @@ export default function Autocomplete({
         placeholder={placeholder}
         disabled={disabled}
         autoComplete="off"
+        aria-label={placeholder ?? 'Search characters'}
         aria-autocomplete="list"
         aria-expanded={showDropdown}
-        aria-controls="autocomplete-listbox"
+        {...(showDropdown ? { "aria-controls": listboxId } : {})}
         aria-activedescendant={
           highlightedIndex >= 0
-            ? `autocomplete-option-${highlightedIndex}`
+            ? `${id}-option-${highlightedIndex}`
             : undefined
         }
       />
 
       {showDropdown && (
         <ul
-          id="autocomplete-listbox"
+          id={listboxId}
           role="listbox"
           className="autocomplete-dropdown"
           ref={listRef}
         >
           {filtered.length === 0 ? (
-            <li className="autocomplete-no-results" role="option" aria-selected={false}>
+            <li className="autocomplete-no-results" role="presentation">
               No results
             </li>
           ) : (
             filtered.map((character, index) => (
               <li
                 key={character.id}
-                id={`autocomplete-option-${index}`}
+                id={`${id}-option-${index}`}
                 role="option"
                 aria-selected={index === highlightedIndex}
                 className={
@@ -173,7 +187,7 @@ export default function Autocomplete({
                   width={32}
                   height={32}
                 />
-                <span className="autocomplete-name">{character.name}</span>
+                <span className="autocomplete-name truncate">{character.name}</span>
               </li>
             ))
           )}

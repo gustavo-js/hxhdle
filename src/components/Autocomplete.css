@@ -99,9 +99,6 @@
 .autocomplete-name {
   font-size: var(--font-size-sm, 14px);
   font-weight: var(--font-weight-medium, 500);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* No results message */
