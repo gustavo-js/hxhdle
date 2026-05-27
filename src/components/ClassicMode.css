@@ -1,0 +1,62 @@
+/* ============================================================================
+   ClassicMode Component Styles
+   ============================================================================ */
+
+.classic-mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg, 24px);
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: var(--spacing-md, 16px);
+}
+
+/* Column header row above the guess grid */
+.classic-mode__headers {
+  display: flex;
+  gap: var(--cell-gap, 4px);
+  width: 100%;
+  justify-content: center;
+}
+
+.classic-mode__header-cell {
+  width: var(--cell-size, 60px);
+  text-align: center;
+  font-size: 10px;
+  font-weight: var(--font-weight-medium, 500);
+  color: var(--color-text-secondary, #a8a8b8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: var(--spacing-xs, 4px);
+  border-bottom: 1px solid var(--cell-border-color, #505070);
+}
+
+/* Search input area */
+.classic-mode__input-area {
+  width: 100%;
+}
+
+/* Guess rows container */
+.classic-mode__guesses {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cell-gap, 4px);
+  width: 100%;
+  align-items: center;
+}
+
+/* Victory section */
+.classic-mode__victory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md, 16px);
+  width: 100%;
+}
+
+/* New game button wrapper */
+.classic-mode__new-game {
+  margin-top: var(--spacing-sm, 8px);
+}
