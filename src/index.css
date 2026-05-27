@@ -13,6 +13,8 @@
   --color-text-primary: #e0e0e0;
   --color-text-secondary: #a8a8b8;
   --color-accent-gold: #c9a84c;
+  --color-accent-gold-light: #dfc96f;
+  --color-accent-gold-hover: #d4b35f;
 
   /* Match Result Colors (Wordle-style) */
   --color-result-correct: #538d4e; /* Green - exact match */
@@ -131,7 +133,7 @@ a {
 }
 
 a:hover {
-  color: #dfc96f;
+  color: var(--color-accent-gold-light);
   text-decoration: underline;
 }
 
@@ -154,7 +156,7 @@ button {
 }
 
 button:hover {
-  background-color: #d4b35f;
+  background-color: var(--color-accent-gold-hover);
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
@@ -220,7 +222,7 @@ select:focus {
 }
 
 /* Firefox */
-* {
+html {
   scrollbar-color: var(--color-accent-gold) var(--color-bg-secondary);
   scrollbar-width: thin;
 }
