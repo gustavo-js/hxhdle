@@ -1,0 +1,114 @@
+/* ============================================================================
+   Autocomplete Component Styles
+   ============================================================================ */
+
+/* Wrapper: position context for the absolutely-placed dropdown */
+.autocomplete-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Input */
+.autocomplete-input {
+  width: 100%;
+  background-color: var(--color-bg-secondary, #16213e);
+  color: var(--color-text-primary, #e0e0e0);
+  border: 2px solid var(--cell-border-color, #505070);
+  border-radius: var(--border-radius-md, 4px);
+  padding: var(--spacing-sm, 8px) var(--spacing-md, 16px);
+  font-size: var(--font-size-base, 16px);
+  font-family: var(--font-family, system-ui, sans-serif);
+  transition:
+    border-color var(--transition-fast, 100ms ease-in-out),
+    box-shadow var(--transition-fast, 100ms ease-in-out);
+  box-sizing: border-box;
+}
+
+.autocomplete-input:focus {
+  outline: none;
+  border-color: var(--color-accent-gold, #c9a84c);
+  box-shadow: 0 2px 0 0 var(--color-accent-gold, #c9a84c),
+    0 0 0 3px rgba(201, 168, 76, 0.12);
+}
+
+.autocomplete-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.autocomplete-input::placeholder {
+  color: var(--color-text-secondary, #a8a8b8);
+}
+
+/* Dropdown list */
+.autocomplete-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: var(--z-dropdown, 100);
+
+  background-color: var(--color-bg-secondary, #16213e);
+  border: 1px solid var(--cell-border-color, #505070);
+  border-radius: var(--border-radius-md, 4px);
+  box-shadow: var(--shadow-lg, 0 8px 16px rgba(0, 0, 0, 0.7));
+
+  list-style: none;
+  margin: 0;
+  padding: var(--spacing-xs, 4px) 0;
+
+  max-height: 280px;
+  overflow-y: auto;
+
+  /* Custom scrollbar inherits from global styles via ::-webkit-scrollbar */
+}
+
+/* Individual suggestion row */
+.autocomplete-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm, 8px);
+  padding: var(--spacing-xs, 4px) var(--spacing-md, 16px);
+  cursor: pointer;
+  transition: background-color var(--transition-fast, 100ms ease-in-out);
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.autocomplete-option:hover {
+  background-color: rgba(201, 168, 76, 0.08);
+}
+
+/* Highlighted row (keyboard navigation) */
+.autocomplete-option--highlighted {
+  background-color: rgba(201, 168, 76, 0.18);
+  color: var(--color-accent-gold-light, #dfc96f);
+}
+
+/* Portrait thumbnail */
+.autocomplete-portrait {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--cell-border-color, #505070);
+  background-color: var(--color-bg-primary, #1a1a2e);
+}
+
+/* Character name */
+.autocomplete-name {
+  font-size: var(--font-size-sm, 14px);
+  font-weight: var(--font-weight-medium, 500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* No results message */
+.autocomplete-no-results {
+  padding: var(--spacing-sm, 8px) var(--spacing-md, 16px);
+  color: var(--color-text-secondary, #a8a8b8);
+  font-size: var(--font-size-sm, 14px);
+  font-style: italic;
+  cursor: default;
+}
