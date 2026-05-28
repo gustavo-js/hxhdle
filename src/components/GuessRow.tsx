@@ -74,6 +74,10 @@ function getArrow(result: AgeMatchResult): string | null {
 export default function GuessRow({ result, character }: GuessRowProps) {
   return (
     <div className="guess-row" role="row">
+      <div className="guess-row__portrait" role="gridcell" aria-label={`Character: ${character.name}`}>
+        <img src={character.image} alt={character.name} className="guess-row__portrait-img" />
+        <span className="guess-cell__label">{character.name}</span>
+      </div>
       {COLUMNS.map((col) => {
         const matchResult = col.getResult(result)
         const className = `guess-cell ${resultToClassName(matchResult)}`

@@ -66,6 +66,7 @@ export default function ClassicMode({ type }: ClassicModeProps) {
       {hasGuesses && (
         <div className="classic-mode__guesses" role="grid" aria-label="Guess history">
           <div role="row" className="classic-mode__headers">
+            <div role="columnheader" className="classic-mode__header-cell" aria-label="Character" />
             {COLUMNS.map((col) => (
               <div key={col.key} role="columnheader" className="classic-mode__header-cell">
                 {col.label}
