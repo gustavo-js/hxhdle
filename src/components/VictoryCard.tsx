@@ -1,4 +1,5 @@
 import type { Character } from "../types"
+import { assetUrl } from "../utils/assetUrl"
 import "./VictoryCard.css"
 
 interface VictoryCardProps {
@@ -17,7 +18,7 @@ export default function VictoryCard({
   return (
     <div className="victory-card">
       <img
-        src={character.image}
+        src={assetUrl(character.image)}
         alt={character.name}
         className="victory-card__portrait"
         width={120}

@@ -2,6 +2,7 @@ import { useCallback } from "react"
 import type { GameType, Character } from "../types"
 import { useGameState } from "../hooks/useGameState"
 import { useStreak } from "../hooks/useStreak"
+import { assetUrl } from "../utils/assetUrl"
 import charactersData from "../data/characters.json"
 import quotesData from "../data/quotes.json"
 import Autocomplete from "./Autocomplete"
@@ -88,7 +89,7 @@ export default function QuoteMode({ type }: QuoteModeProps) {
           <ul className="quote-mode__chips" role="list">
             {wrongGuessCharacters.map((c) => (
               <li key={c.id} className="quote-mode__chip">
-                <img src={c.image} alt={c.name} className="quote-mode__chip-portrait" />
+                <img src={assetUrl(c.image)} alt={c.name} className="quote-mode__chip-portrait" />
                 {c.name}
               </li>
             ))}

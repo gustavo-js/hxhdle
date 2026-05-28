@@ -1,4 +1,5 @@
 import type { ClassicGuessResult, Character, AgeMatchResult, MatchResult } from "../types"
+import { assetUrl } from "../utils/assetUrl"
 import "./GuessRow.css"
 
 interface GuessRowProps {
@@ -80,7 +81,7 @@ export default function GuessRow({ result, character, isNew }: GuessRowProps) {
         aria-label={`Character: ${character.name}`}
       >
         <img
-          src={character.image}
+          src={assetUrl(character.image)}
           alt={character.name}
           className="guess-row__portrait-img"
         />

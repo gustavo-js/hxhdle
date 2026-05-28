@@ -2,6 +2,7 @@ import { useCallback } from "react"
 import type { GameType, Character } from "../types"
 import { useGameState } from "../hooks/useGameState"
 import { useStreak } from "../hooks/useStreak"
+import { assetUrl } from "../utils/assetUrl"
 import charactersData from "../data/characters.json"
 import Autocomplete from "./Autocomplete"
 import StreakBadge from "./StreakBadge"
@@ -58,7 +59,7 @@ export default function ImageMode({ type }: ImageModeProps) {
         {answer && (
           <img
             key={answerId}
-            src={answer.image}
+            src={assetUrl(answer.image)}
             alt="Mystery character"
             className="image-mode__portrait"
             // CSS custom properties drive the filter declared in the stylesheet.

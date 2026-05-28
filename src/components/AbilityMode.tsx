@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect } from "react"
 import type { GameType, Character, Ability } from "../types"
 import { useGameState } from "../hooks/useGameState"
 import { useStreak } from "../hooks/useStreak"
+import { assetUrl } from "../utils/assetUrl"
 import charactersData from "../data/characters.json"
 import abilitiesData from "../data/abilities.json"
 import Autocomplete from "./Autocomplete"
@@ -119,7 +120,7 @@ export default function AbilityMode({ type }: AbilityModeProps) {
           <ul className="ability-mode__chips" role="list">
             {wrongGuessCharacters.map((c) => (
               <li key={c.id} className="ability-mode__chip">
-                <img src={c.image} alt={c.name} className="ability-mode__chip-portrait" />
+                <img src={assetUrl(c.image)} alt={c.name} className="ability-mode__chip-portrait" />
                 {c.name}
               </li>
             ))}

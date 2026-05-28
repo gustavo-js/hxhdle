@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback, useId } from "react"
 import type { Character } from "../types"
+import { assetUrl } from "../utils/assetUrl"
 import "./Autocomplete.css"
 
 interface AutocompleteProps {
@@ -186,7 +187,7 @@ export default function Autocomplete({
               >
                 {!hidePortraits && (
                   <img
-                    src={character.image}
+                    src={assetUrl(character.image)}
                     alt={character.name}
                     className="autocomplete-portrait"
                     width={32}
