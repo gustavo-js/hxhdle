@@ -4,11 +4,16 @@
     "name": "Gon Freecss",
     "gender": "Male",
     "origin": "Whale Island",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Alive",
     "ageRange": "Teen",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/gon-freecss.webp"
   },
   {
@@ -16,11 +21,16 @@
     "name": "Killua Zoldyck",
     "gender": "Male",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family"],
-    "nenType": ["Transmuter"],
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
     "status": "Alive",
     "ageRange": "Teen",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/killua-zoldyck.webp"
   },
   {
@@ -28,11 +38,18 @@
     "name": "Kurapika",
     "gender": "Male",
     "origin": "Lukso Province",
-    "affiliation": ["Nostrade Family", "Hunters Association"],
-    "nenType": ["Conjurer", "Specialist"],
+    "affiliation": [
+      "Nostrade Family",
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Conjurer",
+      "Specialist"
+    ],
     "status": "Alive",
     "ageRange": "Teen",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/kurapika.webp"
   },
   {
@@ -40,11 +57,16 @@
     "name": "Leorio Paradinight",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/leorio-paradinight.webp"
   },
   {
@@ -52,11 +74,16 @@
     "name": "Hisoka Morow",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Transmuter"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/hisoka-morow.webp"
   },
   {
@@ -64,11 +91,17 @@
     "name": "Illumi Zoldyck",
     "gender": "Male",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family", "Phantom Troupe"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Zoldyck Family",
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/illumi-zoldyck.webp"
   },
   {
@@ -76,11 +109,16 @@
     "name": "Isaac Netero",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Deceased",
     "ageRange": "Elder",
     "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/isaac-netero.webp"
   },
   {
@@ -88,11 +126,16 @@
     "name": "Meruem",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Deceased",
     "ageRange": "Child",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/meruem.webp"
   },
   {
@@ -100,11 +143,16 @@
     "name": "Neferpitou",
     "gender": "Unknown",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/neferpitou.webp"
   },
   {
@@ -112,11 +160,16 @@
     "name": "Shaiapouf",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/shaiapouf.webp"
   },
   {
@@ -124,11 +177,16 @@
     "name": "Menthuthuyoupi",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Transmuter"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/menthuthuyoupi.webp"
   },
   {
@@ -136,11 +194,16 @@
     "name": "Chrollo Lucilfer",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/chrollo-lucilfer.webp"
   },
   {
@@ -148,11 +211,16 @@
     "name": "Feitan Portor",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Transmuter"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/feitan-portor.webp"
   },
   {
@@ -160,11 +228,16 @@
     "name": "Machi Komacine",
     "gender": "Female",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Transmuter"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/machi-komacine.webp"
   },
   {
@@ -172,11 +245,16 @@
     "name": "Nobunaga Hazama",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/nobunaga-hazama.webp"
   },
   {
@@ -184,11 +262,16 @@
     "name": "Pakunoda",
     "gender": "Female",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/pakunoda.webp"
   },
   {
@@ -196,11 +279,16 @@
     "name": "Phinks Magcub",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/phinks-magcub.webp"
   },
   {
@@ -208,11 +296,16 @@
     "name": "Shalnark",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/shalnark.webp"
   },
   {
@@ -220,11 +313,16 @@
     "name": "Kortopi",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/kortopi.webp"
   },
   {
@@ -232,11 +330,16 @@
     "name": "Shizuku Murasaki",
     "gender": "Female",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/shizuku-murasaki.webp"
   },
   {
@@ -244,11 +347,16 @@
     "name": "Bonolenov Ndongo",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/bonolenov-ndongo.webp"
   },
   {
@@ -256,11 +364,16 @@
     "name": "Uvogin",
     "gender": "Male",
     "origin": "Meteor City",
-    "affiliation": ["Phantom Troupe"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/uvogin.webp"
   },
   {
@@ -268,11 +381,16 @@
     "name": "Neon Nostrade",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Nostrade Family"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Nostrade Family"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Alive",
     "ageRange": "Teen",
     "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
     "image": "/images/characters/neon-nostrade.webp"
   },
   {
@@ -280,11 +398,16 @@
     "name": "Biscuit Krueger",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Transmuter"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
     "status": "Alive",
     "ageRange": "Elder",
     "hunterLicense": true,
+    "debutArc": "Greed Island Arc",
     "image": "/images/characters/biscuit-krueger.webp"
   },
   {
@@ -292,11 +415,16 @@
     "name": "Wing",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Heavens Arena Arc",
     "image": "/images/characters/wing.webp"
   },
   {
@@ -304,11 +432,16 @@
     "name": "Zushi",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Alive",
     "ageRange": "Child",
     "hunterLicense": false,
+    "debutArc": "Heavens Arena Arc",
     "image": "/images/characters/zushi.webp"
   },
   {
@@ -316,11 +449,16 @@
     "name": "Knuckle Bine",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/knuckle-bine.webp"
   },
   {
@@ -328,11 +466,16 @@
     "name": "Shoot McMahon",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/shoot-mcmahon.webp"
   },
   {
@@ -340,11 +483,16 @@
     "name": "Morel Mackernasey",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/morel-mackernasey.webp"
   },
   {
@@ -352,11 +500,16 @@
     "name": "Knov",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/knov.webp"
   },
   {
@@ -364,11 +517,16 @@
     "name": "Palm Siberia",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/palm-siberia.webp"
   },
   {
@@ -376,11 +534,16 @@
     "name": "Ikalgo",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/ikalgo.webp"
   },
   {
@@ -388,11 +551,16 @@
     "name": "Meleoron",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/meleoron.webp"
   },
   {
@@ -400,11 +568,16 @@
     "name": "Colt",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/colt.webp"
   },
   {
@@ -412,11 +585,16 @@
     "name": "Cheetu",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/cheetu.webp"
   },
   {
@@ -424,11 +602,16 @@
     "name": "Leol",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/leol.webp"
   },
   {
@@ -436,11 +619,16 @@
     "name": "Welfin",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/welfin.webp"
   },
   {
@@ -448,11 +636,16 @@
     "name": "Bloster",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/bloster.webp"
   },
   {
@@ -460,11 +653,16 @@
     "name": "Rammot",
     "gender": "Male",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Enhancer"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/rammot.webp"
   },
   {
@@ -472,11 +670,16 @@
     "name": "Zazan",
     "gender": "Female",
     "origin": "East Gorteau",
-    "affiliation": ["Chimera Ants"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Deceased",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/zazan.webp"
   },
   {
@@ -484,11 +687,16 @@
     "name": "Kite",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Chimera Ant Arc",
     "image": "/images/characters/kite.webp"
   },
   {
@@ -496,11 +704,17 @@
     "name": "Ging Freecss",
     "gender": "Male",
     "origin": "Whale Island",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/ging-freecss.webp"
   },
   {
@@ -508,11 +722,17 @@
     "name": "Pariston Hill",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/pariston-hill.webp"
   },
   {
@@ -520,11 +740,17 @@
     "name": "Cheadle Yorkshire",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/cheadle-yorkshire.webp"
   },
   {
@@ -532,11 +758,17 @@
     "name": "Botobai Gigante",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Elder",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/botobai-gigante.webp"
   },
   {
@@ -544,11 +776,17 @@
     "name": "Ginta",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/ginta.webp"
   },
   {
@@ -556,11 +794,17 @@
     "name": "Cluck",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/cluck.webp"
   },
   {
@@ -568,11 +812,17 @@
     "name": "Mizaistom Nana",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/mizaistom-nana.webp"
   },
   {
@@ -580,11 +830,17 @@
     "name": "Saccho Kobayakawa",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/saccho-kobayakawa.webp"
   },
   {
@@ -592,11 +848,17 @@
     "name": "Kanzai",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/kanzai.webp"
   },
   {
@@ -604,11 +866,17 @@
     "name": "Gel",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/gel.webp"
   },
   {
@@ -616,11 +884,17 @@
     "name": "Piyon",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/piyon.webp"
   },
   {
@@ -628,11 +902,17 @@
     "name": "Lupe",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association", "Zodiacs"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/lupe.webp"
   },
   {
@@ -640,11 +920,16 @@
     "name": "Sanbica Norton",
     "gender": "Female",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/sanbica-norton.webp"
   },
   {
@@ -652,11 +937,16 @@
     "name": "Silva Zoldyck",
     "gender": "Male",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Zoldyck Family Arc",
     "image": "/images/characters/silva-zoldyck.webp"
   },
   {
@@ -664,11 +954,16 @@
     "name": "Kikyo Zoldyck",
     "gender": "Female",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Zoldyck Family Arc",
     "image": "/images/characters/kikyo-zoldyck.webp"
   },
   {
@@ -676,11 +971,16 @@
     "name": "Milluki Zoldyck",
     "gender": "Male",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family"],
-    "nenType": ["Manipulator"],
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Zoldyck Family Arc",
     "image": "/images/characters/milluki-zoldyck.webp"
   },
   {
@@ -688,11 +988,16 @@
     "name": "Alluka Zoldyck",
     "gender": "Female",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family"],
-    "nenType": ["Specialist"],
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
     "status": "Alive",
     "ageRange": "Child",
     "hunterLicense": false,
+    "debutArc": "13th Hunter Chairman Election Arc",
     "image": "/images/characters/alluka-zoldyck.webp"
   },
   {
@@ -700,11 +1005,16 @@
     "name": "Zeno Zoldyck",
     "gender": "Male",
     "origin": "Kukuroo Mountain",
-    "affiliation": ["Zoldyck Family"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Elder",
     "hunterLicense": false,
+    "debutArc": "Zoldyck Family Arc",
     "image": "/images/characters/zeno-zoldyck.webp"
   },
   {
@@ -712,11 +1022,16 @@
     "name": "Mito Freecss",
     "gender": "Female",
     "origin": "Whale Island",
-    "affiliation": ["None"],
-    "nenType": ["None"],
+    "affiliation": [
+      "None"
+    ],
+    "nenType": [
+      "None"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Hunter Exam Arc",
     "image": "/images/characters/mito-freecss.webp"
   },
   {
@@ -724,11 +1039,16 @@
     "name": "Razor",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Greed Island"],
-    "nenType": ["Emitter"],
+    "affiliation": [
+      "Greed Island"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Greed Island Arc",
     "image": "/images/characters/razor.webp"
   },
   {
@@ -736,11 +1056,16 @@
     "name": "Genthru",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Greed Island"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Greed Island"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": false,
+    "debutArc": "Greed Island Arc",
     "image": "/images/characters/genthru.webp"
   },
   {
@@ -748,11 +1073,16 @@
     "name": "Goreinu",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Greed Island"],
-    "nenType": ["Conjurer"],
+    "affiliation": [
+      "Greed Island"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Greed Island Arc",
     "image": "/images/characters/goreinu.webp"
   },
   {
@@ -760,11 +1090,16 @@
     "name": "Tsezguerra",
     "gender": "Male",
     "origin": "Unknown",
-    "affiliation": ["Hunters Association"],
-    "nenType": ["Unknown"],
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
     "status": "Alive",
     "ageRange": "Adult",
     "hunterLicense": true,
+    "debutArc": "Greed Island Arc",
     "image": "/images/characters/tsezguerra.webp"
   }
 ]

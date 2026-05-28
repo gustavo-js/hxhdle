@@ -31,7 +31,16 @@
       "WebSearch",
       "WebFetch(domain:hunterxhunter.fandom.com)",
       "Bash(gzip -c /mnt/d/projects/hxhdle/src/index.css)",
-      "Bash(npm test *)"
+      "Bash(npm test *)",
+      "Bash(identify /mnt/d/projects/hxhdle/public/images/characters/colt.webp /mnt/d/projects/hxhdle/public/images/characters/zazan.webp /mnt/d/projects/hxhdle/public/images/characters/razor.webp /mnt/d/projects/hxhdle/public/images/characters/milluki-zoldyck.webp)",
+      "Bash(ffmpeg -version)",
+      "Bash(pip3 install *)",
+      "Bash(apt list *)",
+      "Bash(dpkg -l)",
+      "Bash(sudo apt-get install -y imagemagick python3-pil)",
+      "WebFetch(domain:hxh.fandom.com)",
+      "WebFetch(domain:voraciousdrake.wordpress.com)",
+      "Bash(gh auth *)"
     ]
   }
 }

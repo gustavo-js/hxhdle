@@ -1,3 +1,12 @@
+export type DebutArc =
+  | "Hunter Exam Arc"
+  | "Zoldyck Family Arc"
+  | "Heavens Arena Arc"
+  | "Yorknew City Arc"
+  | "Greed Island Arc"
+  | "Chimera Ant Arc"
+  | "13th Hunter Chairman Election Arc"
+
 export type Gender = "Male" | "Female" | "Unknown"
 export type NenType =
   | "Enhancer"
@@ -14,6 +23,7 @@ export type Mode = "classic" | "quote" | "ability" | "image"
 export type GameType = "daily" | "freeplay"
 export type MatchResult = "correct" | "partial" | "wrong"
 export type AgeMatchResult = "correct" | "partial-higher" | "partial-lower" | "wrong"
+export type ArcMatchResult = "correct" | "partial-earlier" | "partial-later"
 
 export interface Character {
   id: string
@@ -25,6 +35,7 @@ export interface Character {
   status: Status
   ageRange: AgeRange
   hunterLicense: boolean
+  debutArc: DebutArc
   image: string
 }
 
@@ -48,6 +59,7 @@ export interface ClassicGuessResult {
   status: MatchResult
   ageRange: AgeMatchResult
   hunterLicense: MatchResult
+  debutArc: ArcMatchResult
 }
 
 export interface GameState {

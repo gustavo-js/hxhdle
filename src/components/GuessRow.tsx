@@ -1,4 +1,4 @@
-import type { ClassicGuessResult, Character, AgeMatchResult, MatchResult } from "../types"
+import type { ClassicGuessResult, Character, AgeMatchResult, ArcMatchResult, MatchResult } from "../types"
 import { assetUrl } from "../utils/assetUrl"
 import "./GuessRow.css"
 
@@ -12,7 +12,7 @@ interface ColumnDef {
   key: keyof ClassicGuessResult
   label: string
   getValue: (c: Character) => string
-  getResult: (r: ClassicGuessResult) => MatchResult | AgeMatchResult
+  getResult: (r: ClassicGuessResult) => MatchResult | AgeMatchResult | ArcMatchResult
 }
 
 export const COLUMNS: ColumnDef[] = [
@@ -58,17 +58,23 @@ export const COLUMNS: ColumnDef[] = [
     getValue: (c) => (c.hunterLicense ? "Yes" : "No"),
     getResult: (r) => r.hunterLicense,
   },
+  {
+    key: "debutArc",
+    label: "Debut Arc",
+    getValue: (c) => c.debutArc,
+    getResult: (r) => r.debutArc,
+  },
 ]
 
-function resultToClassName(result: MatchResult | AgeMatchResult): string {
+function resultToClassName(result: MatchResult | AgeMatchResult | ArcMatchResult): string {
   if (result === "correct") return "guess-cell--correct"
   if (result === "wrong") return "guess-cell--wrong"
   return "guess-cell--partial"
 }
 
-function getArrow(result: AgeMatchResult): string | null {
-  if (result === "partial-higher") return "↑"
-  if (result === "partial-lower") return "↓"
+function getArrow(result: AgeMatchResult | ArcMatchResult): string | null {
+  if (result === "partial-higher" || result === "partial-later") return "↑"
+  if (result === "partial-lower" || result === "partial-earlier") return "↓"
   return null
 }
 
@@ -93,7 +99,9 @@ export default function GuessRow({ result, character, isNew }: GuessRowProps) {
       {COLUMNS.map((col, index) => {
         const matchResult = col.getResult(result)
         const value = col.getValue(character)
-        const arrow = col.key === "ageRange" ? getArrow(matchResult as AgeMatchResult) : null
+        const arrow = (col.key === "ageRange" || col.key === "debutArc")
+          ? getArrow(matchResult as AgeMatchResult | ArcMatchResult)
+          : null
         const cellClass = `guess-cell ${resultToClassName(matchResult)}${isNew ? " guess-cell--new" : ""}`
 
         return (
