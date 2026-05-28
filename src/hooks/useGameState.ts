@@ -3,7 +3,7 @@ import type { Mode, GameType, GameState } from '../types'
 import characters from '../data/characters.json'
 import quotes from '../data/quotes.json'
 import abilities from '../data/abilities.json'
-import { getDailyItem } from '../utils/daily'
+import { getDailyItem, getDayIndex } from '../utils/daily'
 
 // Per-mode session pools: tracks which items have been shown this browser session
 // so freeplay never repeats until all items are exhausted, then cycles.
@@ -62,7 +62,10 @@ function initState(mode: Mode, type: GameType): GameState {
       const charIds = characters.map(c => c.id)
       answerId = pickFromPool(getPool(`freeplay-${mode}`), charIds)
     } else {
-      answerId = getDailyItem(characters).id
+      // Offset image-mode's daily index by half the roster so it never
+      // coincides with classic mode on the same day.
+      const dayOffset = mode === 'image' ? Math.floor(characters.length / 2) : 0
+      answerId = getDailyItem(characters, getDayIndex() + dayOffset).id
     }
   } else if (mode === 'quote') {
     const indices = quotes.map((_, i) => String(i))
