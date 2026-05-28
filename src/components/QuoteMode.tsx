@@ -1,9 +1,11 @@
 import { useCallback } from "react"
 import type { GameType, Character } from "../types"
 import { useGameState } from "../hooks/useGameState"
+import { useStreak } from "../hooks/useStreak"
 import charactersData from "../data/characters.json"
 import quotesData from "../data/quotes.json"
 import Autocomplete from "./Autocomplete"
+import StreakBadge from "./StreakBadge"
 import VictoryCard from "./VictoryCard"
 import "./QuoteMode.css"
 
@@ -17,6 +19,9 @@ export default function QuoteMode({ type }: QuoteModeProps) {
   const { answerId, promptIndex, guesses, status, submitGuess, reset } =
     useGameState("quote", type)
 
+  const { display: streakDisplay, broken: streakBroken } =
+    useStreak("quote", type, answerId, status, guesses.length)
+
   const answer = characters.find((c) => c.id === answerId)
   const quote = promptIndex >= 0 ? quotesData[promptIndex] : null
 
@@ -28,6 +33,13 @@ export default function QuoteMode({ type }: QuoteModeProps) {
     .map((id) => characters.find((c) => c.id === id))
     .filter((c): c is Character => c !== undefined)
 
+  const winningCharId = status === "won" && guesses.length > 0
+    ? guesses[guesses.length - 1]
+    : null
+  const winningChar = winningCharId
+    ? characters.find((c) => c.id === winningCharId)
+    : undefined
+
   const handleSelect = useCallback(
     (character: Character) => {
       submitGuess(character.id)
@@ -37,6 +49,10 @@ export default function QuoteMode({ type }: QuoteModeProps) {
 
   return (
     <div className="quote-mode">
+      {type === "freeplay" && (
+        <StreakBadge display={streakDisplay} broken={streakBroken} />
+      )}
+
       {quote && (
         <blockquote className="quote-mode__card">
           <p className="quote-mode__text">"{quote.quote}"</p>
@@ -56,6 +72,16 @@ export default function QuoteMode({ type }: QuoteModeProps) {
         />
       </div>
 
+      {status === "won" && winningChar && (
+        <div className="quote-mode__victory">
+          <VictoryCard
+            character={winningChar}
+            guessCount={guesses.length}
+            onNewGame={type === "freeplay" ? reset : undefined}
+          />
+        </div>
+      )}
+
       {wrongGuessCharacters.length > 0 && (
         <div className="quote-mode__wrong-guesses" aria-label="Wrong guesses">
           <span className="quote-mode__wrong-label">Wrong guesses:</span>
@@ -67,19 +93,6 @@ export default function QuoteMode({ type }: QuoteModeProps) {
               </li>
             ))}
           </ul>
-        </div>
-      )}
-
-      {status === "won" && answer && (
-        <div className="quote-mode__victory">
-          <VictoryCard character={answer} guessCount={guesses.length} />
-          {type === "freeplay" && (
-            <div className="quote-mode__new-game">
-              <button type="button" onClick={reset}>
-                New Game
-              </button>
-            </div>
-          )}
         </div>
       )}
     </div>

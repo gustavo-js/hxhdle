@@ -8,6 +8,7 @@ interface AutocompleteProps {
   onSelect: (character: Character) => void
   placeholder?: string
   disabled?: boolean
+  hidePortraits?: boolean
 }
 
 export default function Autocomplete({
@@ -16,6 +17,7 @@ export default function Autocomplete({
   onSelect,
   placeholder = "Search for a character…",
   disabled = false,
+  hidePortraits = false,
 }: AutocompleteProps) {
   const [query, setQuery] = useState("")
   const [isOpen, setIsOpen] = useState(false)
@@ -78,14 +80,16 @@ export default function Autocomplete({
   }, [filtered.length, highlightedIndex])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(e.target.value)
+    const val = e.target.value
+    setQuery(val)
     setHighlightedIndex(-1)
-    setIsOpen(true)
+    if (val.trim().length >= 2) setIsOpen(true)
+    else setIsOpen(false)
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!isOpen) {
-      if (e.key === "ArrowDown" && query.trim()) {
+      if (e.key === "ArrowDown" && query.trim().length >= 2) {
         e.preventDefault()
         setIsOpen(true)
       }
@@ -122,7 +126,7 @@ export default function Autocomplete({
     }
   }
 
-  const showDropdown = isOpen && query.trim().length > 0
+  const showDropdown = isOpen && query.trim().length >= 2
 
   return (
     <div className="autocomplete-wrapper" ref={wrapperRef}>
@@ -135,7 +139,7 @@ export default function Autocomplete({
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         onFocus={() => {
-          if (query.trim()) setIsOpen(true)
+          if (query.trim().length >= 2) setIsOpen(true)
         }}
         placeholder={placeholder}
         disabled={disabled}
@@ -180,13 +184,15 @@ export default function Autocomplete({
                 onClick={() => handleSelect(character)}
                 onMouseEnter={() => setHighlightedIndex(index)}
               >
-                <img
-                  src={character.image}
-                  alt={character.name}
-                  className="autocomplete-portrait"
-                  width={32}
-                  height={32}
-                />
+                {!hidePortraits && (
+                  <img
+                    src={character.image}
+                    alt={character.name}
+                    className="autocomplete-portrait"
+                    width={32}
+                    height={32}
+                  />
+                )}
                 <span className="autocomplete-name truncate">{character.name}</span>
               </li>
             ))

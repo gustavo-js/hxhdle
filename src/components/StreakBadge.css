@@ -1,0 +1,113 @@
+@keyframes fireFlicker {
+  0%   { transform: scale(1)    rotate(-1deg); }
+  25%  { transform: scale(1.07) rotate(1.2deg); }
+  50%  { transform: scale(0.96) rotate(-1.5deg); }
+  75%  { transform: scale(1.05) rotate(1deg); }
+  100% { transform: scale(1)    rotate(-1deg); }
+}
+
+@keyframes snowflakeSpin {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(20deg) scale(1.06); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+@keyframes countPop {
+  0%   { transform: scale(0.6); }
+  65%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+/* ── Base badge ── */
+
+.streak-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  border-radius: 999px;
+  padding: 3px 9px 3px 5px;
+  backdrop-filter: blur(4px);
+  cursor: default;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+
+  /* fire defaults */
+  background: rgba(28, 13, 0, 0.55);
+  border: 1px solid rgba(255, 100, 20, 0.25);
+}
+
+/* ── Tooltip ── */
+
+.streak-badge::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  white-space: nowrap;
+  background: rgba(8, 12, 28, 0.95);
+  color: rgba(180, 190, 210, 0.9);
+  font-size: 11px;
+  font-family: var(--font-family, system-ui, sans-serif);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(80, 80, 120, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: var(--z-tooltip, 1010);
+}
+
+.streak-badge:hover::after {
+  opacity: 1;
+}
+
+/* ── Fire icon ── */
+
+.streak-badge__icon {
+  font-size: 15px;
+  display: inline-block;
+  animation: fireFlicker 1.6s ease-in-out infinite;
+  transform-origin: bottom center;
+  line-height: 1;
+}
+
+/* ── Count ── */
+
+.streak-badge__count {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 150, 50, 0.9);
+  min-width: 12px;
+  text-align: center;
+  line-height: 1;
+  animation: countPop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* ── Ice (no streak) variant ── */
+
+.streak-badge--ice {
+  background: rgba(0, 18, 38, 0.55);
+  border-color: rgba(100, 190, 255, 0.2);
+}
+
+.streak-badge--ice .streak-badge__icon {
+  animation: snowflakeSpin 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.streak-badge--ice .streak-badge__count {
+  color: rgba(140, 210, 255, 0.8);
+}
+
+/* ── Broken streak (fire goes grey) ── */
+
+.streak-badge--broken {
+  filter: grayscale(1) brightness(0.55);
+  opacity: 0.7;
+}
+
+.streak-badge--broken .streak-badge__icon {
+  animation: none;
+}
