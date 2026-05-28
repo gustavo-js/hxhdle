@@ -29,8 +29,10 @@ export default function App() {
           {MODE_TABS.map(({ value, label }) => (
             <button
               key={value}
+              id={`tab-${value}`}
               role="tab"
               aria-selected={mode === value}
+              aria-controls="panel-main"
               className={`app__mode-tab${mode === value ? " app__mode-tab--active" : ""}`}
               onClick={() => setMode(value)}
               type="button"
@@ -60,11 +62,11 @@ export default function App() {
         </div>
       </nav>
 
-      <main className="app__content">
-        {mode === "classic" && <ClassicMode type={type} />}
-        {mode === "quote" && <QuoteMode type={type} />}
-        {mode === "ability" && <AbilityMode type={type} />}
-        {mode === "image" && <ImageMode type={type} />}
+      <main className="app__content" role="tabpanel" id="panel-main" aria-labelledby={`tab-${mode}`}>
+        {mode === "classic" && <ClassicMode key={`classic-${type}`} type={type} />}
+        {mode === "quote" && <QuoteMode key={`quote-${type}`} type={type} />}
+        {mode === "ability" && <AbilityMode key={`ability-${type}`} type={type} />}
+        {mode === "image" && <ImageMode key={`image-${type}`} type={type} />}
       </main>
     </div>
   )

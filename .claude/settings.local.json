@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash *)",
+      "Bash(npm create *)",
+      "Read(//usr/local/bin/**)",
+      "Read(//home/gus/.nvm/versions/**)",
+      "Read(//usr/bin/**)",
+      "Read(//usr/**)",
+      "Read(//home/**)",
+      "Read(//root/**)",
+      "Read(//home/gus/**)",
+      "Read(//mnt/c/Program Files/nodejs/**)",
+      "Bash(\"/mnt/c/Program Files/nodejs/npm\" --version)",
+      "Bash(/mnt/c/Program Files/nodejs/node.exe *)",
+      "Bash(\"/mnt/c/Program Files/nodejs/npm.cmd\" --version)",
+      "Bash(curl -fsSL https://deb.nodesource.com/setup_20.x)",
+      "Bash(sudo -E bash -)",
+      "Bash(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh)",
+      "Read(//mnt/d/projects/**)",
+      "Read(//tmp/**)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git init *)",
+      "Bash(git *)",
+      "Bash(echo exit code: $? *)",
+      "Bash(node *)",
+      "Bash(npx vitest *)",
+      "Bash(npx tsc *)",
+      "Bash(python3 *)",
+      "WebSearch",
+      "WebFetch(domain:hunterxhunter.fandom.com)",
+      "Bash(gzip -c /mnt/d/projects/hxhdle/src/index.css)",
+      "Bash(npm test *)"
+    ]
+  }
+}

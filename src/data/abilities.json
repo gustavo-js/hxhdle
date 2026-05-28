@@ -47,12 +47,12 @@
   {
     "characterId": "shaiapouf",
     "ability": "Spiritual Message",
-    "description": "A Manipulation ability that allows the user to break down into countless microscopic butterfly scales to read others' emotions or manipulate them."
+    "description": "A Manipulation ability that allows the user to break down into countless microscopic butterfly scales to read others' emotions through aura fluctuations."
   },
   {
     "characterId": "menthuthuyoupi",
     "ability": "Rage Incarnate",
-    "description": "An Emitter ability that converts the user's rage into pure nen energy, allowing them to reshape their body into any form."
+    "description": "A Transmutation ability that converts the user's rage into pure nen energy, allowing them to reshape their body and aura into any form."
   },
   {
     "characterId": "feitan-portor",
@@ -107,7 +107,7 @@
   {
     "characterId": "knov",
     "ability": "Hide and Seek",
-    "description": "A Conjurer ability that creates pocket dimensions as doorways, allowing instant teleportation between any two points."
+    "description": "An Emitter ability that creates pocket dimensions as doorways, allowing instant teleportation between any two marked points."
   },
   {
     "characterId": "knuckle-bine",
@@ -125,19 +125,19 @@
     "description": "A Conjurer ability that summons a random weapon from a numbered wheel, with one slot containing a scythe powerful enough to split the ground."
   },
   {
-    "characterId": "ging-freecss",
-    "ability": "Absorption",
-    "description": "An Emitter ability that allows the user to copy and return any nen attack or technique used against them."
+    "characterId": "neon-nostrade",
+    "ability": "Lovely Ghostwriter",
+    "description": "A Specialist ability that produces divinely inspired poetry foretelling a target's future, providing accurate prophecies of up to four people at a time."
   },
   {
-    "characterId": "pariston-hill",
-    "ability": "Manipulator Puppets",
-    "description": "A Manipulation ability that can animate and control the Chimera Ant cocoons to create an overwhelming army of nen users."
+    "characterId": "isaac-netero",
+    "ability": "100-Type Guanyin Bodhisattva",
+    "description": "A powerful Hatsu that conjures a colossal multi-armed Bodhisattva statue capable of delivering hundreds of devastating palm strikes at superhuman speed."
   },
   {
-    "characterId": "cheadle-yorkshire",
-    "ability": "Infection",
-    "description": "A Specialist ability specializing in creating and curing toxins, used both as a weapon and to save allies from poison."
+    "characterId": "zeno-zoldyck",
+    "ability": "Dragon Dive",
+    "description": "A Transmutation ability that shapes aura into a massive dragon, which can then rain down dozens of smaller piercing dragons over a wide target area."
   },
   {
     "characterId": "razor",
@@ -147,6 +147,6 @@
   {
     "characterId": "genthru",
     "ability": "Countdown",
-    "description": "An Emitter ability that plants a bomb on a target after revealing its secret; the bomb detonates upon a keyword trigger."
+    "description": "A Conjurer ability that attaches a Nen bomb to a target after revealing the ability's rules; the bomb detonates when a specific keyword phrase is uttered."
   }
 ]

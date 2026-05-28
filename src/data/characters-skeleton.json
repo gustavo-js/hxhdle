@@ -1,0 +1,926 @@
+[
+  {
+    "id": "gon-freecss",
+    "name": "Gon Freecss",
+    "image": "/images/characters/gon-freecss.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "killua-zoldyck",
+    "name": "Killua Zoldyck",
+    "image": "/images/characters/killua-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "kurapika",
+    "name": "Kurapika",
+    "image": "/images/characters/kurapika.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "leorio-paradinight",
+    "name": "Leorio Paradinight",
+    "image": "/images/characters/leorio-paradinight.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "hisoka-morow",
+    "name": "Hisoka Morow",
+    "image": "/images/characters/hisoka-morow.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "illumi-zoldyck",
+    "name": "Illumi Zoldyck",
+    "image": "/images/characters/illumi-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "isaac-netero",
+    "name": "Isaac Netero",
+    "image": "/images/characters/isaac-netero.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "meruem",
+    "name": "Meruem",
+    "image": "/images/characters/meruem.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "neferpitou",
+    "name": "Neferpitou",
+    "image": "/images/characters/neferpitou.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "shaiapouf",
+    "name": "Shaiapouf",
+    "image": "/images/characters/shaiapouf.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "menthuthuyoupi",
+    "name": "Menthuthuyoupi",
+    "image": "/images/characters/menthuthuyoupi.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "chrollo-lucilfer",
+    "name": "Chrollo Lucilfer",
+    "image": "/images/characters/chrollo-lucilfer.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "feitan-portor",
+    "name": "Feitan Portor",
+    "image": "/images/characters/feitan-portor.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "machi-komacine",
+    "name": "Machi Komacine",
+    "image": "/images/characters/machi-komacine.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "nobunaga-hazama",
+    "name": "Nobunaga Hazama",
+    "image": "/images/characters/nobunaga-hazama.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "pakunoda",
+    "name": "Pakunoda",
+    "image": "/images/characters/pakunoda.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "phinks-magcub",
+    "name": "Phinks Magcub",
+    "image": "/images/characters/phinks-magcub.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "shalnark",
+    "name": "Shalnark",
+    "image": "/images/characters/shalnark.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "kortopi",
+    "name": "Kortopi",
+    "image": "/images/characters/kortopi.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "shizuku-murasaki",
+    "name": "Shizuku Murasaki",
+    "image": "/images/characters/shizuku-murasaki.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "bonolenov-ndongo",
+    "name": "Bonolenov Ndongo",
+    "image": "/images/characters/bonolenov-ndongo.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "uvogin",
+    "name": "Uvogin",
+    "image": "/images/characters/uvogin.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "neon-nostrade",
+    "name": "Neon Nostrade",
+    "image": "/images/characters/neon-nostrade.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "biscuit-krueger",
+    "name": "Biscuit Krueger",
+    "image": "/images/characters/biscuit-krueger.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "wing",
+    "name": "Wing",
+    "image": "/images/characters/wing.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "zushi",
+    "name": "Zushi",
+    "image": "/images/characters/zushi.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "knuckle-bine",
+    "name": "Knuckle Bine",
+    "image": "/images/characters/knuckle-bine.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "shoot-mcmahon",
+    "name": "Shoot McMahon",
+    "image": "/images/characters/shoot-mcmahon.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "morel-mackernasey",
+    "name": "Morel Mackernasey",
+    "image": "/images/characters/morel-mackernasey.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "knov",
+    "name": "Knov",
+    "image": "/images/characters/knov.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "palm-siberia",
+    "name": "Palm Siberia",
+    "image": "/images/characters/palm-siberia.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "ikalgo",
+    "name": "Ikalgo",
+    "image": "/images/characters/ikalgo.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "meleoron",
+    "name": "Meleoron",
+    "image": "/images/characters/meleoron.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "colt",
+    "name": "Colt",
+    "image": "/images/characters/colt.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "cheetu",
+    "name": "Cheetu",
+    "image": "/images/characters/cheetu.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "leol",
+    "name": "Leol",
+    "image": "/images/characters/leol.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "welfin",
+    "name": "Welfin",
+    "image": "/images/characters/welfin.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "bloster",
+    "name": "Bloster",
+    "image": "/images/characters/bloster.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "rammot",
+    "name": "Rammot",
+    "image": "/images/characters/rammot.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "zazan",
+    "name": "Zazan",
+    "image": "/images/characters/zazan.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "kite",
+    "name": "Kite",
+    "image": "/images/characters/kite.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "ging-freecss",
+    "name": "Ging Freecss",
+    "image": "/images/characters/ging-freecss.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "pariston-hill",
+    "name": "Pariston Hill",
+    "image": "/images/characters/pariston-hill.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "cheadle-yorkshire",
+    "name": "Cheadle Yorkshire",
+    "image": "/images/characters/cheadle-yorkshire.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "botobai-gigante",
+    "name": "Botobai Gigante",
+    "image": "/images/characters/botobai-gigante.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "ginta",
+    "name": "Ginta",
+    "image": "/images/characters/ginta.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "cluck",
+    "name": "Cluck",
+    "image": "/images/characters/cluck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "piyon",
+    "name": "Piyon",
+    "image": "/images/characters/piyon.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "sanbica-norton",
+    "name": "Sanbica Norton",
+    "image": "/images/characters/sanbica-norton.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "mizaistom-nana",
+    "name": "Mizaistom Nana",
+    "image": "/images/characters/mizaistom-nana.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "saccho-kobayakawa",
+    "name": "Saccho Kobayakawa",
+    "image": "/images/characters/saccho-kobayakawa.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "kanzai",
+    "name": "Kanzai",
+    "image": "/images/characters/kanzai.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "gel",
+    "name": "Gel",
+    "image": "/images/characters/gel.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "lupe",
+    "name": "Lupe",
+    "image": "/images/characters/lupe.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "silva-zoldyck",
+    "name": "Silva Zoldyck",
+    "image": "/images/characters/silva-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "kikyo-zoldyck",
+    "name": "Kikyo Zoldyck",
+    "image": "/images/characters/kikyo-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "milluki-zoldyck",
+    "name": "Milluki Zoldyck",
+    "image": "/images/characters/milluki-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "alluka-zoldyck",
+    "name": "Alluka Zoldyck",
+    "image": "/images/characters/alluka-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "zeno-zoldyck",
+    "name": "Zeno Zoldyck",
+    "image": "/images/characters/zeno-zoldyck.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "mito-freecss",
+    "name": "Mito Freecss",
+    "image": "/images/characters/mito-freecss.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "franken-nobunaga",
+    "name": "Franken Nobunaga",
+    "image": "/images/characters/franken-nobunaga.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "razor",
+    "name": "Razor",
+    "image": "/images/characters/razor.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "genthru",
+    "name": "Genthru",
+    "image": "/images/characters/genthru.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "goreinu",
+    "name": "Goreinu",
+    "image": "/images/characters/goreinu.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "tsezguerra",
+    "name": "Tsezguerra",
+    "image": "/images/characters/tsezguerra.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  },
+  {
+    "id": "bisky",
+    "name": "Bisky",
+    "image": "/images/characters/bisky.webp",
+    "_fill_in": {
+      "gender": "",
+      "origin": "",
+      "affiliation": [],
+      "nenType": [],
+      "status": "",
+      "ageRange": "",
+      "hunterLicense": false
+    }
+  }
+]
