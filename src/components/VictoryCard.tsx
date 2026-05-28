@@ -4,11 +4,13 @@ import "./VictoryCard.css"
 interface VictoryCardProps {
   character: Character
   guessCount: number
+  onNewGame?: () => void
 }
 
 export default function VictoryCard({
   character,
   guessCount,
+  onNewGame,
 }: VictoryCardProps) {
   const guessLabel = guessCount === 1 ? "guess" : "guesses"
 
@@ -27,6 +29,12 @@ export default function VictoryCard({
       <p className="victory-card__message">
         You got it in {guessCount} {guessLabel}!
       </p>
+
+      {onNewGame && (
+        <button type="button" onClick={onNewGame} className="victory-card__new-game">
+          New Game
+        </button>
+      )}
     </div>
   )
 }

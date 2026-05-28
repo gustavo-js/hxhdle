@@ -4,6 +4,7 @@ import "./GuessRow.css"
 interface GuessRowProps {
   result: ClassicGuessResult
   character: Character
+  isNew?: boolean
 }
 
 interface ColumnDef {
@@ -61,7 +62,6 @@ export const COLUMNS: ColumnDef[] = [
 function resultToClassName(result: MatchResult | AgeMatchResult): string {
   if (result === "correct") return "guess-cell--correct"
   if (result === "wrong") return "guess-cell--wrong"
-  // partial, partial-higher, partial-lower all get partial background
   return "guess-cell--partial"
 }
 
@@ -71,29 +71,42 @@ function getArrow(result: AgeMatchResult): string | null {
   return null
 }
 
-export default function GuessRow({ result, character }: GuessRowProps) {
+export default function GuessRow({ result, character, isNew }: GuessRowProps) {
   return (
     <div className="guess-row" role="row">
-      <div className="guess-row__portrait" role="gridcell" aria-label={`Character: ${character.name}`}>
-        <img src={character.image} alt={character.name} className="guess-row__portrait-img" />
-        <span className="guess-cell__label">{character.name}</span>
+      <div
+        className="guess-row__portrait"
+        role="gridcell"
+        aria-label={`Character: ${character.name}`}
+      >
+        <img
+          src={character.image}
+          alt={character.name}
+          className="guess-row__portrait-img"
+        />
+        <span className="guess-row__name" aria-hidden="true">
+          {character.name}
+        </span>
       </div>
-      {COLUMNS.map((col) => {
+
+      {COLUMNS.map((col, index) => {
         const matchResult = col.getResult(result)
-        const className = `guess-cell ${resultToClassName(matchResult)}`
         const value = col.getValue(character)
         const arrow = col.key === "ageRange" ? getArrow(matchResult as AgeMatchResult) : null
+        const cellClass = `guess-cell ${resultToClassName(matchResult)}${isNew ? " guess-cell--new" : ""}`
 
         return (
           <div
             key={col.key}
-            className={className}
+            className={cellClass}
             role="gridcell"
             aria-label={`${col.label}: ${value} — ${matchResult}`}
+            style={isNew ? ({ "--col-index": index } as React.CSSProperties) : undefined}
           >
-            <span className="guess-cell__value">{value}</span>
-            {arrow && <span className="guess-cell__arrow">{arrow}</span>}
-            <span className="guess-cell__label">{col.label}</span>
+            <div className="guess-cell__content">
+              <span className="guess-cell__value">{value}</span>
+              {arrow && <span className="guess-cell__arrow">{arrow}</span>}
+            </div>
           </div>
         )
       })}

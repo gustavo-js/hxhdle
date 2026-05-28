@@ -17,16 +17,22 @@
   --color-accent-gold-hover: #d4b35f;
 
   /* Match Result Colors (Wordle-style) */
-  --color-result-correct: #538d4e; /* Green - exact match */
-  --color-result-partial: #b59f3b; /* Yellow - overlap/partial match */
-  --color-result-wrong: #3a3a4c; /* Dark muted - no match */
+  --color-result-correct: #538d4e;
+  --color-result-partial: #b59f3b;
+  --color-result-wrong: #1e2640;
+
+  /* Glow Colors */
+  --color-glow-gold: rgba(201, 168, 76, 0.45);
+  --color-glow-gold-soft: rgba(201, 168, 76, 0.2);
+  --color-glow-correct: rgba(83, 141, 78, 0.45);
+  --color-glow-partial: rgba(181, 159, 59, 0.45);
 
   /* Direction Indicators for Age Range */
   --color-arrow-higher: #b59f3b; /* Yellow - higher than target */
   --color-arrow-lower: #b59f3b; /* Yellow - lower than target */
 
   /* Cell/Tile System */
-  --cell-size: 60px;
+  --cell-size: 76px;
   --cell-gap: 4px;
   --cell-border-radius: 4px;
   --cell-border-width: 2px;
@@ -38,6 +44,7 @@
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
+  --font-family-display: 'Cinzel', Georgia, serif;
   --font-size-base: 16px;
   --font-size-sm: 14px;
   --font-size-lg: 18px;
@@ -45,6 +52,7 @@
   --font-size-2xl: 32px;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
   /* Spacing */
@@ -91,6 +99,8 @@ html {
 
 body {
   background-color: var(--color-bg-primary);
+  background-image: radial-gradient(ellipse at 50% 0%, #1e2242 0%, #1a1a2e 55%, #0f0f1e 100%);
+  background-attachment: fixed;
   color: var(--color-text-primary);
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);

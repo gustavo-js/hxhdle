@@ -7,33 +7,59 @@
   gap: var(--cell-gap, 4px);
 }
 
+/* ---- Portrait cell ---- */
+
 .guess-row__portrait {
-  width: var(--cell-size, 60px);
-  min-height: var(--cell-size, 60px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
+  position: relative;
+  width: var(--cell-size, 76px);
+  height: var(--cell-size, 76px);
+  border-radius: var(--cell-border-radius, 4px);
   flex-shrink: 0;
+  /* overflow visible so the tooltip can escape the cell bounds */
+  overflow: visible;
 }
 
 .guess-row__portrait-img {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--border-radius-md, 8px);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: top center;
+  border-radius: var(--cell-border-radius, 4px);
 }
 
+.guess-row__name {
+  position: absolute;
+  right: calc(100% + 6px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.88);
+  color: var(--color-text-primary, #e0e0e0);
+  font-size: 11px;
+  font-weight: var(--font-weight-medium, 500);
+  padding: 4px 8px;
+  border-radius: var(--border-radius-md, 4px);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: var(--z-tooltip, 1010);
+}
+
+.guess-row__portrait:hover .guess-row__name {
+  opacity: 1;
+}
+
+/* ---- Data cells ---- */
+
 .guess-cell {
-  width: var(--cell-size, 60px);
-  min-height: var(--cell-size, 60px);
+  width: var(--cell-size, 76px);
+  min-height: var(--cell-size, 76px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2px;
-  padding: 4px 2px;
+  padding: 4px;
   border-radius: var(--cell-border-radius, 4px);
   text-align: center;
   box-shadow: var(--shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.5));
@@ -41,18 +67,24 @@
 
 .guess-cell--correct {
   background-color: var(--color-result-correct, #538d4e);
+  box-shadow: 0 0 12px var(--color-glow-correct, rgba(83, 141, 78, 0.45)),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .guess-cell--partial {
   background-color: var(--color-result-partial, #b59f3b);
+  box-shadow: 0 0 12px var(--color-glow-partial, rgba(181, 159, 59, 0.45)),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .guess-cell--wrong {
-  background-color: var(--color-result-wrong, #3a3a4c);
+  background-color: var(--color-result-wrong, #1e2640);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .guess-cell__value {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: var(--font-weight-bold, 700);
   color: var(--color-text-primary, #e0e0e0);
   line-height: 1.2;
@@ -75,4 +107,62 @@
   letter-spacing: 0.03em;
   line-height: 1;
   margin-top: 2px;
+}
+
+/* ---- Flip-in animation ---- */
+/*
+  Mechanics: the cell starts face-up showing a neutral dark background.
+  It tilts to 90 deg (edge-on, invisible) while still showing the neutral
+  background; at that invisible midpoint the result background-color from
+  the modifier class takes over; then it tilts back to face-up revealing
+  the result color.
+*/
+
+/* ---- Flip animation ---- */
+
+@keyframes cell-flip {
+  0% {
+    transform: perspective(600px) rotateY(0deg);
+    background-color: #1a1f38;
+    box-shadow: none;
+    border-color: transparent;
+  }
+  45% {
+    transform: perspective(600px) rotateY(-90deg);
+    background-color: #1a1f38;
+    box-shadow: none;
+    border-color: transparent;
+  }
+  55% {
+    transform: perspective(600px) rotateY(-90deg);
+    box-shadow: none;
+    border-color: transparent;
+  }
+  100% {
+    transform: perspective(600px) rotateY(0deg);
+  }
+}
+
+/* Content fades in only after the cell has flipped past its midpoint */
+@keyframes content-reveal {
+  0%, 55% { opacity: 0; }
+  56%, 100% { opacity: 1; }
+}
+
+.guess-cell__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.guess-cell--new {
+  animation: cell-flip 0.8s ease both;
+  animation-delay: calc(var(--col-index, 0) * 0.8s);
+}
+
+/* Inherits --col-index from parent via CSS variable inheritance */
+.guess-cell--new .guess-cell__content {
+  animation: content-reveal 0.8s ease both;
+  animation-delay: calc(var(--col-index, 0) * 0.8s);
 }

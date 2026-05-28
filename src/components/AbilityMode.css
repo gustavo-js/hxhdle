@@ -2,7 +2,13 @@
    AbilityMode Component Styles
    ============================================================================ */
 
+@keyframes chipIn {
+  from { opacity: 0; transform: scale(0.65); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
 .ability-mode {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,18 +23,21 @@
 
 .ability-mode__card {
   width: 100%;
-  background-color: var(--color-bg-secondary, #16213e);
-  border-left: 4px solid var(--color-accent-gold, #c9a84c);
+  background: linear-gradient(160deg, #1a2245 0%, var(--color-bg-secondary, #16213e) 100%);
+  border-left: 3px solid var(--color-accent-gold, #c9a84c);
   border-radius: var(--border-radius-lg, 8px);
-  padding: var(--spacing-lg, 24px) var(--spacing-lg, 24px) var(--spacing-lg, 24px) calc(var(--spacing-lg, 24px) - 4px);
-  box-shadow: var(--shadow-md, 0 4px 8px rgba(0, 0, 0, 0.6));
+  padding: var(--spacing-lg, 24px) var(--spacing-lg, 24px) var(--spacing-lg, 24px) calc(var(--spacing-lg, 24px) - 3px);
+  box-shadow: var(--shadow-md, 0 4px 8px rgba(0, 0, 0, 0.6)),
+    0 0 20px rgba(201, 168, 76, 0.06);
 }
 
 .ability-mode__name {
+  font-family: var(--font-family-display, 'Cinzel', Georgia, serif);
   font-weight: var(--font-weight-semibold, 600);
   font-size: var(--font-size-lg, 18px);
   color: var(--color-accent-gold, #c9a84c);
   margin: 0 0 var(--spacing-sm, 8px) 0;
+  text-shadow: 0 0 10px rgba(201, 168, 76, 0.3);
 }
 
 .ability-mode__description {
@@ -36,6 +45,32 @@
   color: var(--color-text-primary, #e0e0e0);
   line-height: 1.6;
   margin: 0;
+}
+
+.ability-mode__hint-locked {
+  font-size: var(--font-size-sm, 14px);
+  color: var(--color-text-secondary, #a8a8b8);
+  font-style: italic;
+  margin: var(--spacing-sm, 8px) 0 0;
+}
+
+.ability-mode__hint-btn {
+  margin-top: var(--spacing-sm, 8px);
+  font-size: var(--font-size-sm, 14px);
+  padding: 6px 14px;
+  background-color: transparent;
+  color: var(--color-accent-gold, #c9a84c);
+  border: 1px solid var(--color-accent-gold, #c9a84c);
+  border-radius: var(--border-radius-md, 4px);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.ability-mode__hint-btn:hover {
+  background-color: var(--color-accent-gold, #c9a84c);
+  color: var(--color-bg-primary, #1a1a2e);
+  transform: none;
+  box-shadow: none;
 }
 
 .ability-mode__character {
@@ -84,13 +119,14 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: var(--color-result-wrong, #3a3a4c);
+  background-color: var(--color-result-wrong, #1e2640);
   color: var(--color-text-secondary, #a8a8b8);
   font-size: var(--font-size-sm, 14px);
   padding: 4px 10px 4px 6px;
   border-radius: 999px;
-  border: 1px solid var(--cell-border-color, #505070);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   white-space: nowrap;
+  animation: chipIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
 .ability-mode__chip-portrait {
