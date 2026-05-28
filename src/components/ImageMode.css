@@ -16,20 +16,12 @@
 /* ---- Portrait ---- */
 
 .image-mode__portrait-container {
-  position: relative;
   width: 300px;
   height: 300px;
   overflow: hidden;
   border-radius: 8px;
-  background-color: #000;
+  background-color: var(--color-bg-secondary, #16213e);
   flex-shrink: 0;
-}
-
-.image-mode__cover {
-  position: absolute;
-  inset: 0;
-  background-color: #000;
-  z-index: 1;
 }
 
 .image-mode__portrait {
@@ -37,6 +29,8 @@
   height: 300px;
   object-fit: cover;
   display: block;
+  filter: blur(var(--portrait-blur, 20px)) grayscale(var(--portrait-grayscale, 100%));
+  transition: filter 0.5s ease;
 }
 
 /* ---- Autocomplete wrapper ---- */

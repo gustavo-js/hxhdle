@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useCallback } from "react"
 import type { GameType, Character } from "../types"
 import { useGameState } from "../hooks/useGameState"
 import charactersData from "../data/characters.json"
@@ -21,24 +21,6 @@ export default function ImageMode({ type }: ImageModeProps) {
   const blur = status === "won" ? 0 : 20 / (1 + guesses.length * 0.4)
   const grayscale = status === "won" ? 0 : 100
 
-  // Black cover sits over the image until it fully loads, preventing any
-  // flash of the unfiltered image during the browser decode/paint cycle.
-  const [imageLoaded, setImageLoaded] = useState(false)
-
-  // Reset cover whenever the answer changes (new game).
-  useEffect(() => {
-    setImageLoaded(false)
-  }, [answerId])
-
-  // Disable the CSS transition on the very first render so the initial
-  // blur+grayscale are applied instantly. After one frame transitions
-  // are re-enabled so subsequent guess reductions animate smoothly.
-  const [enableTransition, setEnableTransition] = useState(false)
-  useEffect(() => {
-    const id = requestAnimationFrame(() => setEnableTransition(true))
-    return () => cancelAnimationFrame(id)
-  }, [answerId])
-
   const wrongGuesses = status === "won" ? guesses.slice(0, -1) : guesses
 
   const wrongGuessCharacters = wrongGuesses
@@ -54,26 +36,22 @@ export default function ImageMode({ type }: ImageModeProps) {
 
   return (
     <div className="image-mode">
-      {/* Filter lives on the container — image is always composited
-          inside an already-filtered layer, so it can never appear unfiltered. */}
-      <div
-        className="image-mode__portrait-container"
-        style={{
-          filter: `blur(${blur}px) grayscale(${grayscale}%)`,
-          transition: enableTransition ? "filter 0.5s ease" : "none",
-        }}
-      >
-        {/* Black cover hides the image until it is fully decoded and painted. */}
-        {!imageLoaded && <div className="image-mode__cover" />}
+      <div className="image-mode__portrait-container">
         {answer && (
           <img
             key={answerId}
             src={answer.image}
             alt="Mystery character"
             className="image-mode__portrait"
+            // CSS custom properties drive the filter declared in the stylesheet.
+            // The filter rule is evaluated by the CSS engine at paint time, so
+            // the image is never rendered without the filter applied.
+            style={{
+              "--portrait-blur": `${blur}px`,
+              "--portrait-grayscale": `${grayscale}%`,
+            } as React.CSSProperties}
             width={300}
             height={300}
-            onLoad={() => setImageLoaded(true)}
           />
         )}
       </div>
