@@ -19,6 +19,7 @@ export default function ImageMode({ type }: ImageModeProps) {
   const answer = characters.find((c) => c.id === answerId)
 
   const blur = status === "won" ? 0 : 20 / (1 + guesses.length * 0.4)
+  const grayscale = status === "won" ? 0 : 100
 
   const wrongGuesses = status === "won" ? guesses.slice(0, -1) : guesses
 
@@ -41,7 +42,7 @@ export default function ImageMode({ type }: ImageModeProps) {
             src={answer.image}
             alt="Mystery character"
             className="image-mode__portrait"
-            style={{ filter: `blur(${blur}px)`, transition: "filter 0.5s ease" }}
+            style={{ filter: `blur(${blur}px) grayscale(${grayscale}%)`, transition: "filter 0.5s ease" }}
             width={300}
             height={300}
           />
