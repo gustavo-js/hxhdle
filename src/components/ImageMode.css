@@ -16,12 +16,20 @@
 /* ---- Portrait ---- */
 
 .image-mode__portrait-container {
+  position: relative;
   width: 300px;
   height: 300px;
   overflow: hidden;
   border-radius: 8px;
-  background-color: var(--color-bg-secondary, #16213e);
+  background-color: #000;
   flex-shrink: 0;
+}
+
+.image-mode__cover {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  z-index: 1;
 }
 
 .image-mode__portrait {

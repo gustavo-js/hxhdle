@@ -21,14 +21,23 @@ export default function ImageMode({ type }: ImageModeProps) {
   const blur = status === "won" ? 0 : 20 / (1 + guesses.length * 0.4)
   const grayscale = status === "won" ? 0 : 100
 
-  // Disable transition on first render so the initial filter applies instantly.
-  // After one frame the browser has painted with filters applied; transitions
-  // then animate only subsequent changes (each new guess reducing blur/grayscale).
+  // Black cover sits over the image until it fully loads, preventing any
+  // flash of the unfiltered image during the browser decode/paint cycle.
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  // Reset cover whenever the answer changes (new game).
+  useEffect(() => {
+    setImageLoaded(false)
+  }, [answerId])
+
+  // Disable the CSS transition on the very first render so the initial
+  // blur+grayscale are applied instantly. After one frame transitions
+  // are re-enabled so subsequent guess reductions animate smoothly.
   const [enableTransition, setEnableTransition] = useState(false)
   useEffect(() => {
     const id = requestAnimationFrame(() => setEnableTransition(true))
     return () => cancelAnimationFrame(id)
-  }, [])
+  }, [answerId])
 
   const wrongGuesses = status === "won" ? guesses.slice(0, -1) : guesses
 
@@ -45,18 +54,26 @@ export default function ImageMode({ type }: ImageModeProps) {
 
   return (
     <div className="image-mode">
-      <div className="image-mode__portrait-container">
+      {/* Filter lives on the container — image is always composited
+          inside an already-filtered layer, so it can never appear unfiltered. */}
+      <div
+        className="image-mode__portrait-container"
+        style={{
+          filter: `blur(${blur}px) grayscale(${grayscale}%)`,
+          transition: enableTransition ? "filter 0.5s ease" : "none",
+        }}
+      >
+        {/* Black cover hides the image until it is fully decoded and painted. */}
+        {!imageLoaded && <div className="image-mode__cover" />}
         {answer && (
           <img
+            key={answerId}
             src={answer.image}
             alt="Mystery character"
             className="image-mode__portrait"
-            style={{
-              filter: `blur(${blur}px) grayscale(${grayscale}%)`,
-              transition: enableTransition ? "filter 0.5s ease" : "none",
-            }}
             width={300}
             height={300}
+            onLoad={() => setImageLoaded(true)}
           />
         )}
       </div>
