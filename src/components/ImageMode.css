@@ -28,6 +28,17 @@
   border-radius: 8px;
   background-color: var(--color-bg-secondary, #16213e);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-mode__portrait-fallback {
+  color: var(--color-text-secondary, #a8a8b8);
+  font-size: var(--font-size-sm, 14px);
+  text-align: center;
+  opacity: 0.5;
+  font-style: italic;
 }
 
 .image-mode__portrait {

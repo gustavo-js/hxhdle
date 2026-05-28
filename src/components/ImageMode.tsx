@@ -1,4 +1,4 @@
-import { useCallback } from "react"
+import { useCallback, useState, useEffect } from "react"
 import type { GameType, Character } from "../types"
 import { useGameState } from "../hooks/useGameState"
 import { useStreak } from "../hooks/useStreak"
@@ -42,6 +42,9 @@ export default function ImageMode({ type }: ImageModeProps) {
     ? characters.find((c) => c.id === winningCharId)
     : undefined
 
+  const [imgError, setImgError] = useState(false)
+  useEffect(() => setImgError(false), [answerId])
+
   const handleSelect = useCallback(
     (character: Character) => {
       submitGuess(character.id)
@@ -56,22 +59,25 @@ export default function ImageMode({ type }: ImageModeProps) {
       )}
 
       <div className="image-mode__portrait-container">
-        {answer && (
+        {answer && !imgError && (
           <img
             key={answerId}
             src={assetUrl(answer.image)}
             alt="Mystery character"
             className="image-mode__portrait"
-            // CSS custom properties drive the filter declared in the stylesheet.
-            // The filter rule is evaluated by the CSS engine at paint time, so
-            // the image is never rendered without the filter applied.
             style={{
               "--portrait-blur": `${blur}px`,
               "--portrait-grayscale": `${grayscale}%`,
             } as React.CSSProperties}
             width={300}
             height={300}
+            onError={() => setImgError(true)}
           />
+        )}
+        {imgError && (
+          <div className="image-mode__portrait-fallback">
+            Mystery character
+          </div>
         )}
       </div>
 

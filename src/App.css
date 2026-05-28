@@ -64,8 +64,8 @@
   letter-spacing: 0.12em;
   margin-bottom: var(--spacing-xs);
   text-shadow:
-    0 0 18px var(--color-glow-gold, rgba(201, 168, 76, 0.45)),
-    0 0 40px var(--color-glow-gold-soft, rgba(201, 168, 76, 0.2));
+    0 0 14px rgba(201, 168, 76, 0.2),
+    0 0 28px rgba(201, 168, 76, 0.08);
 }
 
 .app__subtitle {
