@@ -5,7 +5,7 @@ import { exactMatch, setMatch, ageMatch } from "../utils/comparison"
 import charactersData from "../data/characters.json"
 import type { Character } from "../types"
 import Autocomplete from "./Autocomplete"
-import GuessRow from "./GuessRow"
+import GuessRow, { COLUMNS } from "./GuessRow"
 import VictoryCard from "./VictoryCard"
 import "./ClassicMode.css"
 
@@ -15,7 +15,6 @@ interface ClassicModeProps {
 
 const characters = charactersData as Character[]
 
-const COLUMN_HEADERS = ["Gender", "Origin", "Affil.", "Nen", "Status", "Age", "License"]
 
 function buildResult(guessed: Character, answer: Character): ClassicGuessResult {
   return {
@@ -65,21 +64,14 @@ export default function ClassicMode({ type }: ClassicModeProps) {
       </div>
 
       {hasGuesses && (
-        <div
-          className="classic-mode__headers"
-          role="row"
-          aria-label="Column headers"
-        >
-          {COLUMN_HEADERS.map((header) => (
-            <div key={header} className="classic-mode__header-cell">
-              {header}
-            </div>
-          ))}
-        </div>
-      )}
-
-      {hasGuesses && (
-        <div className="classic-mode__guesses" role="grid" aria-label="Guesses">
+        <div className="classic-mode__guesses" role="grid" aria-label="Guess history">
+          <div role="row" className="classic-mode__headers">
+            {COLUMNS.map((col) => (
+              <div key={col.key} role="columnheader" className="classic-mode__header-cell">
+                {col.label}
+              </div>
+            ))}
+          </div>
           {rows}
         </div>
       )}

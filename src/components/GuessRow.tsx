@@ -13,7 +13,7 @@ interface ColumnDef {
   getResult: (r: ClassicGuessResult) => MatchResult | AgeMatchResult
 }
 
-const COLUMNS: ColumnDef[] = [
+export const COLUMNS: ColumnDef[] = [
   {
     key: "gender",
     label: "Gender",
@@ -84,7 +84,7 @@ export default function GuessRow({ result, character }: GuessRowProps) {
           <div
             key={col.key}
             className={className}
-            role="cell"
+            role="gridcell"
             aria-label={`${col.label}: ${value} — ${matchResult}`}
           >
             <span className="guess-cell__value">{value}</span>
