@@ -75,13 +75,24 @@
 }
 
 .quote-mode__chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   background-color: var(--color-result-wrong, #3a3a4c);
   color: var(--color-text-secondary, #a8a8b8);
   font-size: var(--font-size-sm, 14px);
-  padding: 2px var(--spacing-sm, 8px);
+  padding: 4px 10px 4px 6px;
   border-radius: 999px;
   border: 1px solid var(--cell-border-color, #505070);
   white-space: nowrap;
+}
+
+.quote-mode__chip-portrait {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* ---- Victory section ---- */

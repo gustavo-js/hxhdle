@@ -62,6 +62,7 @@ export default function QuoteMode({ type }: QuoteModeProps) {
           <ul className="quote-mode__chips" role="list">
             {wrongGuessCharacters.map((c) => (
               <li key={c.id} className="quote-mode__chip">
+                <img src={c.image} alt={c.name} className="quote-mode__chip-portrait" />
                 {c.name}
               </li>
             ))}
