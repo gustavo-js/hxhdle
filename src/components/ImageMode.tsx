@@ -1,4 +1,4 @@
-import { useCallback } from "react"
+import { useCallback, useEffect, useState } from "react"
 import type { GameType, Character } from "../types"
 import { useGameState } from "../hooks/useGameState"
 import charactersData from "../data/characters.json"
@@ -21,6 +21,15 @@ export default function ImageMode({ type }: ImageModeProps) {
   const blur = status === "won" ? 0 : 20 / (1 + guesses.length * 0.4)
   const grayscale = status === "won" ? 0 : 100
 
+  // Disable transition on first render so the initial filter applies instantly.
+  // After one frame the browser has painted with filters applied; transitions
+  // then animate only subsequent changes (each new guess reducing blur/grayscale).
+  const [enableTransition, setEnableTransition] = useState(false)
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setEnableTransition(true))
+    return () => cancelAnimationFrame(id)
+  }, [])
+
   const wrongGuesses = status === "won" ? guesses.slice(0, -1) : guesses
 
   const wrongGuessCharacters = wrongGuesses
@@ -42,7 +51,10 @@ export default function ImageMode({ type }: ImageModeProps) {
             src={answer.image}
             alt="Mystery character"
             className="image-mode__portrait"
-            style={{ filter: `blur(${blur}px) grayscale(${grayscale}%)`, transition: "filter 0.5s ease" }}
+            style={{
+              filter: `blur(${blur}px) grayscale(${grayscale}%)`,
+              transition: enableTransition ? "filter 0.5s ease" : "none",
+            }}
             width={300}
             height={300}
           />
