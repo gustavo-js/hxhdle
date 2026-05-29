@@ -96,8 +96,8 @@
   },
   {
     "characterId": "biscuit-krueger",
-    "ability": "Pretty Surge",
-    "description": "A Transmutation ability that uses nen to give therapeutic massages, rapidly restoring a person's aura and physical condition."
+    "ability": "Magical Esthetician",
+    "description": "A Conjurer ability that summons a masseuse named Cookie who performs specialized Nen-infused massages, rapidly restoring aura and physical condition; a single session is equivalent to hours of natural recovery."
   },
   {
     "characterId": "morel-mackernasey",
@@ -141,18 +141,13 @@
   },
   {
     "characterId": "razor",
-    "ability": "Nen Balls",
-    "description": "An Emitter ability that creates highly compressed nen balls with devastating force, capable of obliterating anything they touch."
+    "ability": "14 Devils",
+    "description": "An Emitter ability that manifests 14 individual Nen beasts of varying size and strength; Razor directs them as teammates in combat, can merge two into a stronger devil, and recalls dispersed aura to reconstitute them."
   },
   {
     "characterId": "genthru",
     "ability": "Countdown",
     "description": "A Conjurer ability that attaches a Nen bomb to a target after revealing the ability's rules; the bomb detonates when a specific keyword phrase is uttered."
-  },
-  {
-    "characterId": "hanzo",
-    "ability": "Ninjutsu Body Enhancement",
-    "description": "A Transmutation ability that channels aura through shinobi conditioning to supercharge physical attributes, allowing speed and strength that appear superhuman to ordinary observers."
   },
   {
     "characterId": "pokkle",
@@ -181,8 +176,8 @@
   },
   {
     "characterId": "sadaso",
-    "ability": "Ghost Arm",
-    "description": "A Manipulation ability that manifests a phantom limb of aura in place of the user's severed arm, capable of stretching to grip and hold opponents from a distance."
+    "ability": "Aura Arm",
+    "description": "A Transmutation ability that reshapes the user's aura into a functional replacement for their severed arm, capable of stretching to grip and restrain opponents from a distance."
   },
   {
     "characterId": "franklin-bordeau",
@@ -220,24 +215,9 @@
     "description": "A Conjurer ability that summons a Nen beast specifically designed to consume a targeted Nen curse; the beast then binds to Abengane until the formerly cursed person dies naturally."
   },
   {
-    "characterId": "sub",
-    "ability": "Little Flower",
-    "description": "An Emission ability that concentrates aura into a single fingertip and releases it on contact as a small but devastatingly powerful explosion."
-  },
-  {
-    "characterId": "bara",
-    "ability": "Little Flower",
-    "description": "An Emission ability that concentrates aura into a single fingertip and releases it on contact as a small but devastatingly powerful explosion."
-  },
-  {
     "characterId": "komugi",
     "ability": "Nen of Intuition",
     "description": "An unconscious Enhancement of cognitive ability that pushes her brain beyond human limits when playing Gungi, allowing her to intuitively devise strategies that no Nen user has ever defeated."
-  },
-  {
-    "characterId": "hina",
-    "ability": "Curse Absorption",
-    "description": "A Specialist ability that draws Nen curses into her own body to break them down and dissolve them; she is the only known Chimera Ant with exorcism-type capabilities."
   },
   {
     "characterId": "tsubone",
