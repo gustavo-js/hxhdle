@@ -148,5 +148,105 @@
     "characterId": "genthru",
     "ability": "Countdown",
     "description": "A Conjurer ability that attaches a Nen bomb to a target after revealing the ability's rules; the bomb detonates when a specific keyword phrase is uttered."
+  },
+  {
+    "characterId": "hanzo",
+    "ability": "Ninjutsu Body Enhancement",
+    "description": "A Transmutation ability that channels aura through shinobi conditioning to supercharge physical attributes, allowing speed and strength that appear superhuman to ordinary observers."
+  },
+  {
+    "characterId": "pokkle",
+    "ability": "Rainbow",
+    "description": "An Emission ability that shapes aura between two fingers into a bowstring and fires colored arrow projectiles, each color carrying a distinct elemental property."
+  },
+  {
+    "characterId": "ponzu",
+    "ability": "Beehive Hat",
+    "description": "A Manipulation ability that directs a colony of trained bees stored in her hat to attack, scout, and deliver messages; if she is knocked unconscious they attack indiscriminately."
+  },
+  {
+    "characterId": "gotoh",
+    "ability": "Coin Gatling",
+    "description": "An Enhancement ability that infuses gold coins with Shu and fires them simultaneously from both hands at ultrasonic speed, each coin hitting with more force than a gunshot."
+  },
+  {
+    "characterId": "gido",
+    "ability": "Tornado Top",
+    "description": "An Enhancement ability that spins the user on a prosthetic peg leg while charging the body and handheld tops with aura, turning the user into a living spinning weapon."
+  },
+  {
+    "characterId": "riehlvelt",
+    "ability": "Thunder Snake",
+    "description": "An Emission ability that channels high-voltage electrical aura through twin bullwhips, delivering powerful shocks to anyone struck and creating an aura barrier when spun defensively."
+  },
+  {
+    "characterId": "sadaso",
+    "ability": "Ghost Arm",
+    "description": "A Manipulation ability that manifests a phantom limb of aura in place of the user's severed arm, capable of stretching to grip and hold opponents from a distance."
+  },
+  {
+    "characterId": "franklin-bordeau",
+    "ability": "Double Machine Gun",
+    "description": "An Emission ability that fires concentrated aura bullets simultaneously from all ten fingers at ultrasonic speed, each shot carrying destructive force capable of mowing down groups of enemies."
+  },
+  {
+    "characterId": "kalluto-zoldyck",
+    "ability": "Dance of the Serpent's Bite",
+    "description": "A Manipulation ability that scatters paper confetti and guides the shards to pierce a target repeatedly from multiple angles, and can attach a shard to a person to function as an audio surveillance device."
+  },
+  {
+    "characterId": "melody",
+    "ability": "Enchanting Music",
+    "description": "A Manipulation ability that plays Nen-infused flute music to heal injuries, calm aura, and stabilize emotions in listeners; she can also passively detect lies by hearing the slightest irregularities in heartbeat."
+  },
+  {
+    "characterId": "squala",
+    "ability": "Dog Manipulation",
+    "description": "A Manipulation ability that uses Nen to command a pack of trained dogs, directing them to perform reconnaissance, attack targets, and deliver coded signals via bark patterns."
+  },
+  {
+    "characterId": "baise",
+    "ability": "Instant Lover",
+    "description": "A Manipulation ability activated by a kiss that immediately converts the target into a fully obedient slave; the effect persists until the user consciously releases it."
+  },
+  {
+    "characterId": "basho",
+    "ability": "Great Haiku",
+    "description": "A Conjurer ability that infuses composed haiku verse with Nen, causing the literal content of each poem to manifest as a real physical phenomenon such as flames, lightning, or storms."
+  },
+  {
+    "characterId": "abengane",
+    "ability": "Exorcism",
+    "description": "A Conjurer ability that summons a Nen beast specifically designed to consume a targeted Nen curse; the beast then binds to Abengane until the formerly cursed person dies naturally."
+  },
+  {
+    "characterId": "sub",
+    "ability": "Little Flower",
+    "description": "An Emission ability that concentrates aura into a single fingertip and releases it on contact as a small but devastatingly powerful explosion."
+  },
+  {
+    "characterId": "bara",
+    "ability": "Little Flower",
+    "description": "An Emission ability that concentrates aura into a single fingertip and releases it on contact as a small but devastatingly powerful explosion."
+  },
+  {
+    "characterId": "komugi",
+    "ability": "Nen of Intuition",
+    "description": "An unconscious Enhancement of cognitive ability that pushes her brain beyond human limits when playing Gungi, allowing her to intuitively devise strategies that no Nen user has ever defeated."
+  },
+  {
+    "characterId": "hina",
+    "ability": "Curse Absorption",
+    "description": "A Specialist ability that draws Nen curses into her own body to break them down and dissolve them; she is the only known Chimera Ant with exorcism-type capabilities."
+  },
+  {
+    "characterId": "tsubone",
+    "ability": "Rider's High",
+    "description": "A Conjurer ability that transforms the user's body into a functional vehicle — motorcycle, glider, or similar — powered by the aura supplied by whoever rides her."
+  },
+  {
+    "characterId": "saiyu",
+    "ability": "Three Monkeys",
+    "description": "A Nen ability that deploys three phantom monkeys — one each for sight, hearing, and speech — that blinds, deafens, and silences any target they successfully strike."
   }
 ]

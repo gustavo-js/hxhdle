@@ -1,22 +1,214 @@
 [
-  { "characterId": "gon-freecss", "quote": "I want to become a Hunter just like my father." },
-  { "characterId": "killua-zoldyck", "quote": "There are liars who only lie when there's a reason to, and there are liars who also lie without reason." },
-  { "characterId": "kurapika", "quote": "I will become a Blacklist Hunter and bring down the Phantom Troupe." },
-  { "characterId": "leorio-paradinight", "quote": "Don't lump me in with you guys. I'm only in this for the money!" },
-  { "characterId": "hisoka-morow", "quote": "My greatest pleasure comes when such people buckle to their knees and beg for mercy." },
-  { "characterId": "chrollo-lucilfer", "quote": "I have no interest in any individual. The only thing I care about is the Troupe." },
-  { "characterId": "meruem", "quote": "Why do humans insist on fighting over trivial differences, such as birthplace?" },
-  { "characterId": "neferpitou", "quote": "The king must not be harmed. That is our one absolute." },
-  { "characterId": "isaac-netero", "quote": "I've spent my entire life pushing myself to the limit to find a worthy opponent." },
-  { "characterId": "illumi-zoldyck", "quote": "Killua, you are my little brother. I will always protect you from making wrong decisions." },
-  { "characterId": "biscuit-krueger", "quote": "Stress makes you stronger. That's the gift of Nen." },
-  { "characterId": "ging-freecss", "quote": "You should enjoy the little detours to the fullest. Because that's where you'll find the things more important than what you want." },
-  { "characterId": "kite", "quote": "There's no such thing as a painless lesson. That's how stupid humans are." },
-  { "characterId": "knuckle-bine", "quote": "If you're going to cry, do it after the battle." },
-  { "characterId": "morel-mackernasey", "quote": "Hesitation at the crucial moment is a flaw you need to fix." },
-  { "characterId": "silva-zoldyck", "quote": "The Zoldycks have survived for generations because we never betray a client." },
-  { "characterId": "zeno-zoldyck", "quote": "Professional assassins don't leave witnesses." },
-  { "characterId": "razor", "quote": "I was created to play games. But these games have rules, and rules must be respected." },
-  { "characterId": "genthru", "quote": "Once I decided to play to win, I stopped worrying about the methods." },
-  { "characterId": "pariston-hill", "quote": "I only have fun when I'm being hated. People who aren't hated aren't worth a thing." }
+  {
+    "characterId": "gon-freecss",
+    "quote": "I want to become a Hunter just like my father."
+  },
+  {
+    "characterId": "killua-zoldyck",
+    "quote": "There are liars who only lie when there's a reason to, and there are liars who also lie without reason."
+  },
+  {
+    "characterId": "kurapika",
+    "quote": "I will become a Blacklist Hunter and bring down the Phantom Troupe."
+  },
+  {
+    "characterId": "leorio-paradinight",
+    "quote": "Don't lump me in with you guys. I'm only in this for the money!"
+  },
+  {
+    "characterId": "hisoka-morow",
+    "quote": "My greatest pleasure comes when such people buckle to their knees and beg for mercy."
+  },
+  {
+    "characterId": "chrollo-lucilfer",
+    "quote": "I have no interest in any individual. The only thing I care about is the Troupe."
+  },
+  {
+    "characterId": "meruem",
+    "quote": "Why do humans insist on fighting over trivial differences, such as birthplace?"
+  },
+  {
+    "characterId": "neferpitou",
+    "quote": "The king must not be harmed. That is our one absolute."
+  },
+  {
+    "characterId": "isaac-netero",
+    "quote": "I've spent my entire life pushing myself to the limit to find a worthy opponent."
+  },
+  {
+    "characterId": "illumi-zoldyck",
+    "quote": "Killua, you are my little brother. I will always protect you from making wrong decisions."
+  },
+  {
+    "characterId": "biscuit-krueger",
+    "quote": "Stress makes you stronger. That's the gift of Nen."
+  },
+  {
+    "characterId": "ging-freecss",
+    "quote": "You should enjoy the little detours to the fullest. Because that's where you'll find the things more important than what you want."
+  },
+  {
+    "characterId": "kite",
+    "quote": "There's no such thing as a painless lesson. That's how stupid humans are."
+  },
+  {
+    "characterId": "knuckle-bine",
+    "quote": "If you're going to cry, do it after the battle."
+  },
+  {
+    "characterId": "morel-mackernasey",
+    "quote": "Hesitation at the crucial moment is a flaw you need to fix."
+  },
+  {
+    "characterId": "silva-zoldyck",
+    "quote": "The Zoldycks have survived for generations because we never betray a client."
+  },
+  {
+    "characterId": "zeno-zoldyck",
+    "quote": "Professional assassins don't leave witnesses."
+  },
+  {
+    "characterId": "razor",
+    "quote": "I was created to play games. But these games have rules, and rules must be respected."
+  },
+  {
+    "characterId": "genthru",
+    "quote": "Once I decided to play to win, I stopped worrying about the methods."
+  },
+  {
+    "characterId": "pariston-hill",
+    "quote": "I only have fun when I'm being hated. People who aren't hated aren't worth a thing."
+  },
+  {
+    "characterId": "tonpa",
+    "quote": "I am the Rookie Crusher. I take pride in making newbies fail the exam."
+  },
+  {
+    "characterId": "hanzo",
+    "quote": "I have been training every single day since I was born. You think a kid like you can outlast a ninja?"
+  },
+  {
+    "characterId": "pokkle",
+    "quote": "My arrows are not just arrows. Each one is charged with a different kind of power."
+  },
+  {
+    "characterId": "ponzu",
+    "quote": "My bees won't attack unless I'm in danger — but if I am, there's no stopping them."
+  },
+  {
+    "characterId": "bodoro",
+    "quote": "I cannot fight a child. That is my code, and I will not break it."
+  },
+  {
+    "characterId": "beans",
+    "quote": "By order of Chairman Netero, voting in the 13th Chairman election shall begin immediately."
+  },
+  {
+    "characterId": "satotz",
+    "quote": "Keeping pace with me is the first trial. Those who fall behind are unworthy of becoming Hunters."
+  },
+  {
+    "characterId": "menchi",
+    "quote": "A Hunter must be able to prepare and cook their own food in the wild. That is the essence of survival!"
+  },
+  {
+    "characterId": "buhara",
+    "quote": "My single condition is this: bring me a whole roast pig — the most dangerous one in the forest."
+  },
+  {
+    "characterId": "gotoh",
+    "quote": "Which hand is the coin in? Guess right three times in a row, and you may pass."
+  },
+  {
+    "characterId": "canary",
+    "quote": "This is the Zoldyck estate. No visitors are allowed beyond this point."
+  },
+  {
+    "characterId": "gido",
+    "quote": "You think a spinning top can't kill you? Let me show you otherwise."
+  },
+  {
+    "characterId": "riehlvelt",
+    "quote": "My whips reach every corner of this ring. There is nowhere for you to run."
+  },
+  {
+    "characterId": "sadaso",
+    "quote": "I'm not asking you to lose — I'm asking you to forfeit. There is a difference."
+  },
+  {
+    "characterId": "franklin-bordeau",
+    "quote": "Our motto is simple — steal everything worth stealing, and destroy everything else."
+  },
+  {
+    "characterId": "kalluto-zoldyck",
+    "quote": "I joined the Phantom Troupe for one reason only. To save my brother."
+  },
+  {
+    "characterId": "melody",
+    "quote": "I can hear your heartbeat. You're frightened — but you are not lying."
+  },
+  {
+    "characterId": "squala",
+    "quote": "I never wanted to be involved in this world. I just wanted to be with her."
+  },
+  {
+    "characterId": "light-nostrade",
+    "quote": "My daughter's ability is what built this family. Without her gift, we are nothing."
+  },
+  {
+    "characterId": "dalzollene",
+    "quote": "Do not think of the enemy as human. Anyone who approaches the boss is to be neutralized. Understood?"
+  },
+  {
+    "characterId": "baise",
+    "quote": "One kiss is all it takes. After that, they will do anything I say."
+  },
+  {
+    "characterId": "basho",
+    "quote": "Raging flames — burn them all to ash. Great Haiku of Fire!"
+  },
+  {
+    "characterId": "abengane",
+    "quote": "I will not lift the curse without compensation. That is my one rule."
+  },
+  {
+    "characterId": "sub",
+    "quote": "As long as Genthru gives the order, I will carry it out without question."
+  },
+  {
+    "characterId": "bara",
+    "quote": "We are the Bombers. No one escapes once they have been marked."
+  },
+  {
+    "characterId": "chimera-ant-queen",
+    "quote": "Bring me more humans. My offspring must surpass every living thing that has ever existed."
+  },
+  {
+    "characterId": "komugi",
+    "quote": "If I cannot win, I will give you my life. That is the rule I live by for every match."
+  },
+  {
+    "characterId": "hina",
+    "quote": "I will absorb your curse into myself. That is what I exist for."
+  },
+  {
+    "characterId": "shidore",
+    "quote": "I remember... I remember being Reina."
+  },
+  {
+    "characterId": "peggy",
+    "quote": "I have read every book the humans left behind. Knowledge is the greatest weapon of all."
+  },
+  {
+    "characterId": "tsubone",
+    "quote": "I could end this in an instant if Silva-sama ordered it. Do not test me."
+  },
+  {
+    "characterId": "amane",
+    "quote": "My grandmother and I have been assigned to escort you. Please do not make this any more difficult."
+  },
+  {
+    "characterId": "saiyu",
+    "quote": "I don't have much to say. I'll just note that I'm confident I can supervise Beyond by myself."
+  }
 ]

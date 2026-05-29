@@ -40,7 +40,11 @@
       "Bash(sudo apt-get install -y imagemagick python3-pil)",
       "WebFetch(domain:hxh.fandom.com)",
       "WebFetch(domain:voraciousdrake.wordpress.com)",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "Bash(curl -s \"https://hunterxhunter.fandom.com/api.php?action=query&titles=Tonpa|Hanzo|Pokkle|Ponzu|Gotoh|Canary|Satotz|Menchi|Buhara|Bodoro&prop=pageimages&format=json&pithumbsize=500\")",
+      "Bash(curl -s \"https://hunterxhunter.fandom.com/api.php?action=query&titles=Gido|Riehlvelt|Sadaso|Franklin+Bordeau|Kalluto+Zoldyck|Melody|Squala|Light+Nostrade|Dalzollene|Baise|Basho|Abengane|Sub|Bara|Chimera+Ant+Queen|Komugi|Hina|Shidore|Peggy|Tsubone|Amane|Piyon|Lupe|Beans&prop=pageimages&format=json&pithumbsize=500\")",
+      "Bash(curl -s \"https://hunterxhunter.fandom.com/api.php?action=query&titles=Pyon|Lupe+\\(Hunter+x+Hunter\\)|Beans+\\(Hunter+x+Hunter\\)|Mamen+Beans&prop=pageimages&format=json&pithumbsize=500\")",
+      "Bash(curl -s \"https://hunterxhunter.fandom.com/api.php?action=query&titles=Lupe|Saiyu&prop=pageimages|revisions&rvprop=content&rvslots=main&format=json&pithumbsize=500\")"
     ]
   }
 }

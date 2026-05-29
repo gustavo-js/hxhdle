@@ -898,24 +898,6 @@
     "image": "/images/characters/piyon.webp"
   },
   {
-    "id": "lupe",
-    "name": "Lupe",
-    "gender": "Female",
-    "origin": "Unknown",
-    "affiliation": [
-      "Hunters Association",
-      "Zodiacs"
-    ],
-    "nenType": [
-      "Unknown"
-    ],
-    "status": "Alive",
-    "ageRange": "Adult",
-    "hunterLicense": true,
-    "debutArc": "13th Hunter Chairman Election Arc",
-    "image": "/images/characters/lupe.webp"
-  },
-  {
     "id": "sanbica-norton",
     "name": "Sanbica Norton",
     "gender": "Female",
@@ -1101,5 +1083,561 @@
     "hunterLicense": true,
     "debutArc": "Greed Island Arc",
     "image": "/images/characters/tsezguerra.webp"
+  },
+  {
+    "id": "tonpa",
+    "name": "Tonpa",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/tonpa.webp"
+  },
+  {
+    "id": "hanzo",
+    "name": "Hanzo",
+    "gender": "Male",
+    "origin": "Jappon",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Transmuter"
+    ],
+    "status": "Alive",
+    "ageRange": "Teen",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/hanzo.webp"
+  },
+  {
+    "id": "pokkle",
+    "name": "Pokkle",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/pokkle.webp"
+  },
+  {
+    "id": "ponzu",
+    "name": "Ponzu",
+    "gender": "Female",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
+    "status": "Deceased",
+    "ageRange": "Teen",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/ponzu.webp"
+  },
+  {
+    "id": "bodoro",
+    "name": "Bodoro",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Deceased",
+    "ageRange": "Elder",
+    "hunterLicense": false,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/bodoro.webp"
+  },
+  {
+    "id": "beans",
+    "name": "Beans",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/beans.webp"
+  },
+  {
+    "id": "satotz",
+    "name": "Satotz",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/satotz.webp"
+  },
+  {
+    "id": "menchi",
+    "name": "Menchi",
+    "gender": "Female",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/menchi.webp"
+  },
+  {
+    "id": "buhara",
+    "name": "Buhara",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Hunter Exam Arc",
+    "image": "/images/characters/buhara.webp"
+  },
+  {
+    "id": "gotoh",
+    "name": "Gotoh",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Zoldyck Family Arc",
+    "image": "/images/characters/gotoh.webp"
+  },
+  {
+    "id": "canary",
+    "name": "Canary",
+    "gender": "Female",
+    "origin": "Meteor City",
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Teen",
+    "hunterLicense": false,
+    "debutArc": "Zoldyck Family Arc",
+    "image": "/images/characters/canary.webp"
+  },
+  {
+    "id": "gido",
+    "name": "Gido",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [],
+    "nenType": [
+      "Enhancer"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Heavens Arena Arc",
+    "image": "/images/characters/gido.webp"
+  },
+  {
+    "id": "riehlvelt",
+    "name": "Riehlvelt",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [],
+    "nenType": [
+      "Emitter"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Heavens Arena Arc",
+    "image": "/images/characters/riehlvelt.webp"
+  },
+  {
+    "id": "sadaso",
+    "name": "Sadaso",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [],
+    "nenType": [
+      "Manipulator"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Heavens Arena Arc",
+    "image": "/images/characters/sadaso.webp"
+  },
+  {
+    "id": "franklin-bordeau",
+    "name": "Franklin Bordeau",
+    "gender": "Male",
+    "origin": "Meteor City",
+    "affiliation": [
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/franklin-bordeau.webp"
+  },
+  {
+    "id": "kalluto-zoldyck",
+    "name": "Kalluto Zoldyck",
+    "gender": "Male",
+    "origin": "Kukuroo Mountain",
+    "affiliation": [
+      "Zoldyck Family",
+      "Phantom Troupe"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
+    "status": "Alive",
+    "ageRange": "Child",
+    "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/kalluto-zoldyck.webp"
+  },
+  {
+    "id": "melody",
+    "name": "Melody",
+    "gender": "Female",
+    "origin": "Unknown",
+    "affiliation": [
+      "Nostrade Family",
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/melody.webp"
+  },
+  {
+    "id": "squala",
+    "name": "Squala",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Nostrade Family"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/squala.webp"
+  },
+  {
+    "id": "light-nostrade",
+    "name": "Light Nostrade",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Nostrade Family"
+    ],
+    "nenType": [
+      "None"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/light-nostrade.webp"
+  },
+  {
+    "id": "dalzollene",
+    "name": "Dalzollene",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Nostrade Family"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/dalzollene.webp"
+  },
+  {
+    "id": "baise",
+    "name": "Baise",
+    "gender": "Female",
+    "origin": "Unknown",
+    "affiliation": [
+      "Nostrade Family",
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Manipulator"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/baise.webp"
+  },
+  {
+    "id": "basho",
+    "name": "Basho",
+    "gender": "Male",
+    "origin": "Jappon",
+    "affiliation": [
+      "Nostrade Family",
+      "Hunters Association"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Yorknew City Arc",
+    "image": "/images/characters/basho.webp"
+  },
+  {
+    "id": "abengane",
+    "name": "Abengane",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Greed Island"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "Greed Island Arc",
+    "image": "/images/characters/abengane.webp"
+  },
+  {
+    "id": "sub",
+    "name": "Sub",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Greed Island"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Greed Island Arc",
+    "image": "/images/characters/sub.webp"
+  },
+  {
+    "id": "bara",
+    "name": "Bara",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Greed Island"
+    ],
+    "nenType": [
+      "Emitter"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Greed Island Arc",
+    "image": "/images/characters/bara.webp"
+  },
+  {
+    "id": "chimera-ant-queen",
+    "name": "Chimera Ant Queen",
+    "gender": "Female",
+    "origin": "NGL",
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "None"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
+    "image": "/images/characters/chimera-ant-queen.webp"
+  },
+  {
+    "id": "komugi",
+    "name": "Komugi",
+    "gender": "Female",
+    "origin": "East Gorteau",
+    "affiliation": [
+      "None"
+    ],
+    "nenType": [
+      "Enhancer"
+    ],
+    "status": "Deceased",
+    "ageRange": "Teen",
+    "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
+    "image": "/images/characters/komugi.webp"
+  },
+  {
+    "id": "hina",
+    "name": "Hina",
+    "gender": "Female",
+    "origin": "East Gorteau",
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Specialist"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
+    "image": "/images/characters/hina.webp"
+  },
+  {
+    "id": "shidore",
+    "name": "Shidore",
+    "gender": "Female",
+    "origin": "East Gorteau",
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "None"
+    ],
+    "status": "Alive",
+    "ageRange": "Child",
+    "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
+    "image": "/images/characters/shidore.webp"
+  },
+  {
+    "id": "peggy",
+    "name": "Peggy",
+    "gender": "Male",
+    "origin": "NGL",
+    "affiliation": [
+      "Chimera Ants"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Deceased",
+    "ageRange": "Adult",
+    "hunterLicense": false,
+    "debutArc": "Chimera Ant Arc",
+    "image": "/images/characters/peggy.webp"
+  },
+  {
+    "id": "tsubone",
+    "name": "Tsubone",
+    "gender": "Female",
+    "origin": "Kukuroo Mountain",
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Conjurer"
+    ],
+    "status": "Alive",
+    "ageRange": "Elder",
+    "hunterLicense": false,
+    "debutArc": "13th Hunter Chairman Election Arc",
+    "image": "/images/characters/tsubone.webp"
+  },
+  {
+    "id": "amane",
+    "name": "Amane",
+    "gender": "Female",
+    "origin": "Kukuroo Mountain",
+    "affiliation": [
+      "Zoldyck Family"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Teen",
+    "hunterLicense": false,
+    "debutArc": "13th Hunter Chairman Election Arc",
+    "image": "/images/characters/amane.webp"
+  },
+  {
+    "id": "saiyu",
+    "name": "Saiyu",
+    "gender": "Male",
+    "origin": "Unknown",
+    "affiliation": [
+      "Hunters Association",
+      "Zodiacs"
+    ],
+    "nenType": [
+      "Unknown"
+    ],
+    "status": "Alive",
+    "ageRange": "Adult",
+    "hunterLicense": true,
+    "debutArc": "13th Hunter Chairman Election Arc",
+    "image": "/images/characters/saiyu.webp"
   }
 ]
