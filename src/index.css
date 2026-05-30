@@ -26,7 +26,7 @@
   --color-glow-gold-soft: rgba(201, 168, 76, 0.2);
   --color-glow-correct: rgba(83, 141, 78, 0.45);
   --color-glow-partial: rgba(181, 159, 59, 0.45);
-
+  --color-glow-wrong: rgba(181, 60, 60, 0.45);
   /* Direction Indicators for Age Range */
   --color-arrow-higher: #b59f3b; /* Yellow - higher than target */
   --color-arrow-lower: #b59f3b; /* Yellow - lower than target */
