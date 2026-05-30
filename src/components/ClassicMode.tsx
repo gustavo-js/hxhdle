@@ -2,11 +2,12 @@ import { useCallback, useState, useEffect, useRef } from "react"
 import confetti from "canvas-confetti"
 import type { GameType, ClassicGuessResult } from "../types"
 import { useGameState } from "../hooks/useGameState"
-import { exactMatch, setMatch, ageMatch, arcMatch } from "../utils/comparison"
+import { exactMatch, setMatch, ageDirection, ageMatch, arcDirection, arcMatch } from "../utils/comparison"
 import charactersData from "../data/characters.json"
 import type { Character } from "../types"
 import Autocomplete from "./Autocomplete"
-import GuessRow, { COLUMNS } from "./GuessRow"
+import GuessRow from "./GuessRow"
+import { COLUMNS } from "./guessColumns"
 import VictoryCard from "./VictoryCard"
 import "./ClassicMode.css"
 
@@ -29,8 +30,10 @@ function buildResult(guessed: Character, answer: Character): ClassicGuessResult 
     nenType: setMatch(guessed.nenType, answer.nenType),
     status: exactMatch(guessed.status, answer.status),
     ageRange: ageMatch(guessed.ageRange, answer.ageRange),
+    ageRangeDirection: ageDirection(guessed.ageRange, answer.ageRange),
     hunterLicense: exactMatch(guessed.hunterLicense, answer.hunterLicense),
     debutArc: arcMatch(guessed.debutArc, answer.debutArc),
+    debutArcDirection: arcDirection(guessed.debutArc, answer.debutArc),
   }
 }
 

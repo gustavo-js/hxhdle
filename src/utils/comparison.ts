@@ -1,4 +1,13 @@
-import type { AgeRange, AgeMatchResult, ArcMatchResult, DebutArc, MatchResult } from '../types'
+import type {
+  AgeDirection,
+  AgeMatchResult,
+  AgeRange,
+  ArcDirection,
+  ArcMatchResult,
+  BinaryMatchResult,
+  DebutArc,
+  MatchResult,
+} from '../types'
 
 const AGE_ORDER: AgeRange[] = ['Child', 'Teen', 'Adult', 'Elder']
 
@@ -12,7 +21,7 @@ const ARC_ORDER: DebutArc[] = [
   '13th Hunter Chairman Election Arc',
 ]
 
-export function exactMatch(a: string | boolean, b: string | boolean): MatchResult {
+export function exactMatch(a: string | boolean, b: string | boolean): BinaryMatchResult {
   return a === b ? 'correct' : 'wrong'
 }
 
@@ -25,15 +34,19 @@ export function setMatch(a: string[], b: string[]): MatchResult {
 }
 
 export function ageMatch(guess: AgeRange, answer: AgeRange): AgeMatchResult {
-  if (guess === answer) return 'correct'
-  return AGE_ORDER.indexOf(answer) > AGE_ORDER.indexOf(guess)
-    ? 'partial-higher'
-    : 'partial-lower'
+  return exactMatch(guess, answer)
+}
+
+export function ageDirection(guess: AgeRange, answer: AgeRange): AgeDirection {
+  if (guess === answer) return null
+  return AGE_ORDER.indexOf(answer) > AGE_ORDER.indexOf(guess) ? 'higher' : 'lower'
 }
 
 export function arcMatch(guess: DebutArc, answer: DebutArc): ArcMatchResult {
-  if (guess === answer) return 'correct'
-  return ARC_ORDER.indexOf(answer) < ARC_ORDER.indexOf(guess)
-    ? 'partial-earlier'
-    : 'partial-later'
+  return exactMatch(guess, answer)
+}
+
+export function arcDirection(guess: DebutArc, answer: DebutArc): ArcDirection {
+  if (guess === answer) return null
+  return ARC_ORDER.indexOf(answer) < ARC_ORDER.indexOf(guess) ? 'earlier' : 'later'
 }

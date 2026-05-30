@@ -1,5 +1,6 @@
-import type { ClassicGuessResult, Character, AgeMatchResult, ArcMatchResult, MatchResult } from "../types"
+import type { AgeDirection, ArcDirection, ClassicGuessResult, Character, MatchResult } from "../types"
 import { assetUrl } from "../utils/assetUrl"
+import { COLUMNS } from "./guessColumns"
 import "./GuessRow.css"
 
 interface GuessRowProps {
@@ -8,73 +9,15 @@ interface GuessRowProps {
   isNew?: boolean
 }
 
-interface ColumnDef {
-  key: keyof ClassicGuessResult
-  label: string
-  getValue: (c: Character) => string
-  getResult: (r: ClassicGuessResult) => MatchResult | AgeMatchResult | ArcMatchResult
-}
-
-export const COLUMNS: ColumnDef[] = [
-  {
-    key: "gender",
-    label: "Gender",
-    getValue: (c) => c.gender,
-    getResult: (r) => r.gender,
-  },
-  {
-    key: "origin",
-    label: "Origin",
-    getValue: (c) => c.origin,
-    getResult: (r) => r.origin,
-  },
-  {
-    key: "affiliation",
-    label: "Affil.",
-    getValue: (c) => c.affiliation.join(" / "),
-    getResult: (r) => r.affiliation,
-  },
-  {
-    key: "nenType",
-    label: "Nen",
-    getValue: (c) => c.nenType.join(" / "),
-    getResult: (r) => r.nenType,
-  },
-  {
-    key: "status",
-    label: "Status",
-    getValue: (c) => c.status,
-    getResult: (r) => r.status,
-  },
-  {
-    key: "ageRange",
-    label: "Age",
-    getValue: (c) => c.ageRange,
-    getResult: (r) => r.ageRange,
-  },
-  {
-    key: "hunterLicense",
-    label: "License",
-    getValue: (c) => (c.hunterLicense ? "Yes" : "No"),
-    getResult: (r) => r.hunterLicense,
-  },
-  {
-    key: "debutArc",
-    label: "Debut Arc",
-    getValue: (c) => c.debutArc,
-    getResult: (r) => r.debutArc,
-  },
-]
-
-function resultToClassName(result: MatchResult | AgeMatchResult | ArcMatchResult): string {
+function resultToClassName(result: MatchResult): string {
   if (result === "correct") return "guess-cell--correct"
   if (result === "wrong") return "guess-cell--wrong"
   return "guess-cell--partial"
 }
 
-function getArrow(result: AgeMatchResult | ArcMatchResult): string | null {
-  if (result === "partial-higher" || result === "partial-later") return "↑"
-  if (result === "partial-lower" || result === "partial-earlier") return "↓"
+function getArrow(direction: AgeDirection | ArcDirection | undefined): string | null {
+  if (direction === "higher" || direction === "later") return "↑"
+  if (direction === "lower" || direction === "earlier") return "↓"
   return null
 }
 
@@ -99,9 +42,8 @@ export default function GuessRow({ result, character, isNew }: GuessRowProps) {
       {COLUMNS.map((col, index) => {
         const matchResult = col.getResult(result)
         const value = col.getValue(character)
-        const arrow = (col.key === "ageRange" || col.key === "debutArc")
-          ? getArrow(matchResult as AgeMatchResult | ArcMatchResult)
-          : null
+        const direction = col.getDirection?.(result)
+        const arrow = getArrow(direction)
         const cellClass = `guess-cell ${resultToClassName(matchResult)}${isNew ? " guess-cell--new" : ""}`
 
         return (
@@ -109,7 +51,7 @@ export default function GuessRow({ result, character, isNew }: GuessRowProps) {
             key={col.key}
             className={cellClass}
             role="gridcell"
-            aria-label={`${col.label}: ${value} — ${matchResult}`}
+            aria-label={`${col.label}: ${value} — ${matchResult}${direction ? ` ${direction}` : ""}`}
             style={isNew ? ({ "--col-index": index } as React.CSSProperties) : undefined}
           >
             <div className="guess-cell__content">

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { exactMatch, setMatch, ageMatch } from './comparison'
+import { exactMatch, setMatch, ageDirection, ageMatch, arcDirection, arcMatch } from './comparison'
 
 describe('exactMatch', () => {
   it('returns correct for equal strings', () => {
@@ -35,10 +35,43 @@ describe('ageMatch', () => {
   it('returns correct for same age range', () => {
     expect(ageMatch('Teen', 'Teen')).toBe('correct')
   })
-  it('returns partial-higher when answer is older than guess', () => {
-    expect(ageMatch('Teen', 'Adult')).toBe('partial-higher')
+  it('returns wrong when answer is older than guess', () => {
+    expect(ageMatch('Teen', 'Adult')).toBe('wrong')
   })
-  it('returns partial-lower when answer is younger than guess', () => {
-    expect(ageMatch('Adult', 'Teen')).toBe('partial-lower')
+  it('returns wrong when answer is younger than guess', () => {
+    expect(ageMatch('Adult', 'Teen')).toBe('wrong')
+  })
+})
+
+describe('ageDirection', () => {
+  it('returns null for same age range', () => {
+    expect(ageDirection('Teen', 'Teen')).toBeNull()
+  })
+  it('returns higher when answer is older than guess', () => {
+    expect(ageDirection('Teen', 'Adult')).toBe('higher')
+  })
+  it('returns lower when answer is younger than guess', () => {
+    expect(ageDirection('Adult', 'Teen')).toBe('lower')
+  })
+})
+
+describe('arcMatch', () => {
+  it('returns correct for same debut arc', () => {
+    expect(arcMatch('Hunter Exam Arc', 'Hunter Exam Arc')).toBe('correct')
+  })
+  it('returns wrong for different debut arcs', () => {
+    expect(arcMatch('Hunter Exam Arc', 'Yorknew City Arc')).toBe('wrong')
+  })
+})
+
+describe('arcDirection', () => {
+  it('returns null for same debut arc', () => {
+    expect(arcDirection('Hunter Exam Arc', 'Hunter Exam Arc')).toBeNull()
+  })
+  it('returns later when answer debuts later than guess', () => {
+    expect(arcDirection('Hunter Exam Arc', 'Yorknew City Arc')).toBe('later')
+  })
+  it('returns earlier when answer debuts earlier than guess', () => {
+    expect(arcDirection('Yorknew City Arc', 'Hunter Exam Arc')).toBe('earlier')
   })
 })

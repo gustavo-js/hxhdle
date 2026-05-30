@@ -22,8 +22,11 @@ export type AgeRange = "Child" | "Teen" | "Adult" | "Elder"
 export type Mode = "classic" | "quote" | "ability" | "image"
 export type GameType = "daily" | "freeplay"
 export type MatchResult = "correct" | "partial" | "wrong"
-export type AgeMatchResult = "correct" | "partial-higher" | "partial-lower" | "wrong"
-export type ArcMatchResult = "correct" | "partial-earlier" | "partial-later"
+export type BinaryMatchResult = "correct" | "wrong"
+export type AgeMatchResult = BinaryMatchResult
+export type ArcMatchResult = BinaryMatchResult
+export type AgeDirection = "higher" | "lower" | null
+export type ArcDirection = "earlier" | "later" | null
 
 export interface Character {
   id: string
@@ -58,8 +61,10 @@ export interface ClassicGuessResult {
   nenType: MatchResult
   status: MatchResult
   ageRange: AgeMatchResult
+  ageRangeDirection: AgeDirection
   hunterLicense: MatchResult
   debutArc: ArcMatchResult
+  debutArcDirection: ArcDirection
 }
 
 export interface GameState {
